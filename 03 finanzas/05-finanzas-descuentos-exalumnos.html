@@ -1,0 +1,915 @@
+
+<html>
+<head>
+<title>ESAN</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse;}
+</style>
+<![endif]-->
+<style type="text/css">
+/* Basics */
+body {
+margin: 0 !important;
+padding: 0;
+background-color: #ffffff;
+}
+table {
+border-spacing: 0;
+font-family: sans-serif;
+color: #333333;
+}
+td {
+padding: 0;
+}
+img {
+border: 0;
+}
+div[style*="margin: 16px 0"] {
+margin:0 !important;
+}
+.wrapper {
+width: 100%;
+table-layout: fixed;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+.webkit {
+max-width: 600px;
+margin: 0 auto;
+}
+.outer {
+Margin: 0 auto;
+width: 100%;
+max-width: 600px;
+}
+.outer-full {
+width: 100%;
+}
+.desc {
+    max-width: 50%;
+}
+.inner {
+padding: 10px 30px;
+}
+.cta {
+padding: 0;
+}
+.videos {
+padding: 30px 18px;
+text-align: center;
+}
+.contents {
+width: 100%;
+}
+p {
+Margin: 0;
+}
+a {
+text-decoration: underline;
+}
+.h1 {
+font-size: 18px;
+font-weight: bold;
+Margin-bottom: 18px;
+}
+.h2 {
+font-size: 18px;
+font-weight: bold;
+Margin-bottom: 12px;
+}
+.full-width-image img {
+width: 100%;
+max-width: 600px;
+height: auto;
+}
+.header {
+width: 100%;
+margin: 0 auto;
+background-color: #02a1da;
+}
+.titulo-opciones {
+font-size: 16px;
+padding-bottom: 10px;
+color: #4d4d4d;
+}
+.master {
+padding: 10px;
+text-align: center;
+}
+/* One column layout */
+.one-column .contents {
+text-align: center;
+}
+.one-column p {
+font-size: 18px;
+Margin-bottom: 10px;
+}
+#responsive {
+display: none;
+}
+#desktop {
+display: block;
+}
+.evento {
+font-size: 21px;
+color: #ffffff;
+padding-bottom: 30px;
+}
+
+/*Two column layout*/
+.two-column {
+text-align: center;
+font-size: 0;
+}
+.two-column .column {
+width: 100%;
+max-width: 230px;
+display: inline-block;
+vertical-align: top;
+}
+.two-column .contents {
+font-size: 14px;
+text-align: left;
+}
+.two-column img {
+width: 100%;
+max-width: 280px;
+height: auto;
+}
+.two-column .text {
+padding-top: 10px;
+}
+
+/*Three column layout*/
+.three-column {
+text-align: center;
+font-size: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.three-column .column {
+width: 100%;
+max-width: 200px;
+display: inline-block;
+vertical-align: top;
+}
+.three-column img {
+width: 100%;
+max-width: 180px;
+height: auto;
+}
+.three-column .contents {
+font-size: 14px;
+text-align: center;
+}
+.three-column .text {
+padding-top: 10px;
+}
+
+/* Left sidebar layout */
+.left-sidebar {
+text-align: left;
+font-size: 0;
+}
+.left-sidebar .column {
+width: 100%;
+display: inline-block;
+vertical-align: middle;
+}
+.left-sidebar .left {
+max-width: 343px;
+}
+.left-sidebar .right {
+max-width: 50px;
+}
+.left-sidebar .img {
+width: 100%;
+max-width: 343px;
+height: auto;
+}
+.left-sidebar .contents {
+font-size: 14px;
+text-align: center;
+}
+.left-sidebar a {
+color: #02a1da;
+}
+
+/* Right sidebar layout */
+.right-sidebar {
+text-align: center;
+font-size: 0;
+}
+.right-sidebar .column {
+width: 100%;
+display: inline-block;
+vertical-align: middle;
+}
+.right-sidebar .left {
+max-width: 100px;
+}
+.right-sidebar .right {
+max-width: 500px;
+}
+.right-sidebar .img {
+width: 100%;
+max-width: 80px;
+height: auto;
+}
+.right-sidebar .contents {
+font-size: 14px;
+text-align: center;
+}
+.right-sidebar a {
+color: #70bbd9;
+}
+/*Media Queries*/
+@media screen and (max-width: 620px) {
+.three-column .column {
+	max-width: 33% !important;
+}
+.two-column .column {
+	max-width: 50% !important;
+}
+.left-sidebar .right{
+	max-width: 100%;
+	margin: auto;
+}
+.cta {
+	padding: 0;
+}
+.inner{
+	text-align: center;
+}
+.left-sidebar .left {
+	max-width: 100%;
+	width: 100%;
+	margin: auto;
+}
+.left-sidebar .column {
+	display: block !important;
+	text-align: center;
+	vertical-align: middle;
+}
+#desktop {
+	display: none;
+}
+#responsive {
+	display: block !important;
+}
+#responsive .inner {
+	display: block !important;
+	text-align: center;
+}
+	.titulo {
+padding: 0 0 20 !important;
+}
+}
+@media screen and (max-width: 400px) {
+.two-column .column,
+.three-column .column {
+	max-width: 90% !important;
+}
+.two-column img {
+	max-width: 100% !important;
+}
+.two-column .contents {
+	text-align: center;
+}
+.three-column img {
+	max-width: 50% !important;
+}
+.cta {
+	padding: 0;
+}
+.header{
+	overflow: hidden;
+}
+.three-column .column{
+	max-width: 53% ;
+	margin-top: 30px;
+	margin: auto ;
+}
+.outer .three-column .contents{
+	margin-top: 30px;
+}
+.one-column{
+	padding-top:  30px
+}
+.left-sidebar{
+	padding-bottom: 24px;
+}
+.inner{
+	text-align: center!important;
+}
+.inner img{
+	max-width: 100%;
+	width: 100%;
+	margin: auto;
+}
+#desktop {
+	display: none;
+}
+.responsive .inner {
+	display: block !important;
+	text-align: center;
+}
+.titulo {
+font-size: 30px!important;
+line-height: 30px!important;
+padding: 0 0 20 !important;
+}
+.logo-400 {
+	max-width: 70%!important;
+}
+.text {
+text-align: center;
+}
+.section-padding {
+padding: 15px!important;
+}
+.logos-univ {
+	max-width: 300px!important;
+}
+.evento {
+font-size: 16px;
+}
+}
+</style>
+</head>
+<body style="padding:0;background-color:#ffffff;margin:0 !important;">
+<center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+<div class="header">
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%" align="center">
+<tr>
+<td>
+<![endif]-->
+
+
+	<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center">
+<tr>
+	<td width="100%" align="center" bgcolor="#86754d" class="section-padding imagen-background" alt="" style="padding: 0px 15px 0px 15px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-image: url(https://www.esan.edu.pe/mails/maestrias/2019/lima/finanzas/1/img/fondo.jpg);background-repeat: no-repeat;background-position: top center;background-size: cover;max-width: 100%;height: auto;color: #060; border-top: solid; border-top-width: 4px; border-top-color: #dd0333;">
+	   <!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+			<td align="center" valign="top" width="100%">
+			<![endif]-->
+	   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;width: 100% !important;" class="responsive-table">
+		 <tr>
+		   <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			 <!-- HERO IMAGE -->
+			 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+			   <tr>
+				 <td align="center" class="padding" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 0px 5% 15px 5% !important;">
+
+				 </td>
+			   </tr>
+			   <tr>
+				 <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+
+
+<!-- COPY -->
+<table width="100%" style="display: inline-block;padding: 15px 0;">
+		<tr>
+			<td>
+
+					<div class="column" style="width:60%;min-width:400px;display:inline-block;vertical-align:top;">
+							<table border="0" cellspacing="0" cellpadding="0" width="80%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+								  <tr>
+									  <td valign="top" class="master" style="text-align:center;padding: 0;">
+										  <table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;">
+											  <tr>
+												  <td style="padding:0;">
+														<p class="titulo" style="font-size: 44px; color: #ffffff; line-height: 46px; padding: 30px  0 30px; text-transform: uppercase;">
+																<strong>MAESTRÍA EN FINANZAS</strong>
+															</p>
+												  </td>
+											  </tr>
+										  </table>
+									  </td>
+								  </tr>
+							  </table>
+						</div>
+				<table border="0" cellspacing="0" class="desc" cellpadding="0" width="100%" style="border-spacing:0;">
+					<tr>
+						<td style="color: #ffffff;">
+              <p class="evento"><strong>Consulta por nuestro descuento especial para exalumnos</strong></p>
+
+						<p style="font-size: 16px; color: fff; padding-bottom: 30px;"><strong>Inauguración: 9 de mayo 2019</strong></p></td>
+					</tr>
+				</table>
+<p style="padding-bottom: 20px;"><img src="https://www.esan.edu.pe/mails/maestrias/2018/maestria-en-administracion-de-negocios/img/logo-esan-blanco.png" alt="Logo" width="200" height="60" style="margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;" border="0"></p>
+						<p style="Margin:0;"><img src="https://www.esan.edu.pe/mails/maestrias/2018/Mfinanzas2018-II/inauguracion/img/pompeu.png" alt="Logo" width="200" height="auto" style="border:0;display: block;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 1px;outline: none;text-decoration: none; display: inline-block;" border="0"></p>
+				<p style="color: #ffffff; font-size: 14px; padding: 30px 0; text-decoration: none;"><strong>CONTÁCTATE CON NOSOTROS:</strong><br><br>
+	Asesora comercial: Cintia La Madrid<br>
+	Teléfonos: 317 7226 | Anexo: 44132<br>Cel: 942 035 676<br>
+	<a style="color: #ffffff; text-decoration: underline;" href="mailto:clamadrid@esan.edu.pe" target="_blank">clamadrid@esan.edu.pe</a></p>
+			</td>
+		</tr>
+	</table>
+
+<!-- FIN COPY -->
+
+				 </td>
+			   </tr>
+			 </table>
+		   </td>
+		 </tr>
+	   </table>
+	   <!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+
+  </td>
+	</tr>
+
+
+    </table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center">
+<tr bgcolor="#242424">
+	<td>
+<table class="outer" align="center">
+
+<tr>
+<td class="left-sidebar">
+		<!--[if (gte mso 9)|(IE)]>
+		<table width="100%">
+		<tr>
+		<td width="100">
+		<![endif]-->
+		<div class="column left">
+			<table width="100%">
+				<tr id="desktop">
+					<td class="inner">
+						<img src="https://www.esan.edu.pe/mails/maestrias/2018/maestria-en-administracion-de-negocios/dscto-exalumnos/img/flecha_03.gif" alt="" width="343">
+					</td>
+				</tr>
+				<tr id="responsive">
+					<td class="inner">
+						<img src="https://www.esan.edu.pe/mails/maestrias/2018/maestria-en-administracion-de-negocios/img/flecha-movil_03.gif" width="343" alt="Sé parte de nuestra gran escuela" />
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--[if (gte mso 9)|(IE)]>
+		</td><td width="343">
+		<![endif]-->
+		<div class="column right">
+			<table width="100%">
+				<tr>
+					<td class="inner contents"><table align="center" border="0" cellpadding="0" cellspacing="0" width="200px" style="max-width: 200px; border-style: solid; border-width: 0px; border-radius: 5px; border-top-width: 0px; border-collapse: collapse;border-spacing: 0;">
+		   <tr>
+			 <td align="center"><a style="text-decoration: none; color: #ffffff;line-height: 20px; padding: 10px 20px; margin-bottom: 5px;font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #FFF;background-color: #86754d;" href="https://www.esan.edu.pe/maestrias/finanzas/solicitud-de-informacion/?utm_source=basededatos&utm_medium=interno&utm_content=html_exalumnos&utm_campaign=MAF2019I&src=basededatos_interno_html_exalumnos_MAF2019I" target="_blank"><strong>Más información</strong></a></td>
+		   </tr>
+		 </table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--[if (gte mso 9)|(IE)]>
+		</td>
+		</tr>
+		</table>
+		<![endif]-->
+	</td>
+</tr>
+
+</table>
+
+	</td>
+</tr>
+</table>
+
+</div>
+<div class="webkit" style="max-width:600px;margin:0 auto;">
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center">
+<tr>
+<td>
+<![endif]-->
+<table border="0" cellspacing="0" cellpadding="0" class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+	<tr>
+		<td class="one-column" style="padding:0;">
+			<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+				<tr>
+					<td class="inner contents" style="padding:0;padding:10px 30px;width:100%;text-align:center;text-align: center; padding-top: 30px; line-height: 26px;"><p style="font-family: sans-serif; font-size: 16px;"><strong>ESAN Graduate School of Business</strong> y la Universidad Pompeu Fabra (UPF Barcelona School of Management), España, han unido esfuerzos para diseñar y ofrecer la Maestría en Finanzas, que conduce a una doble certificación:</p></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+			<tr>
+				<td class="two-column" style="padding:0;text-align:center;font-size:0;">
+					<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<![endif]-->
+					<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;padding-bottom:20px;">
+					  <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+							<tr>
+								<td valign="top" class="master" style="text-align:center;">
+									<table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;">
+										<tr>
+											<td style="padding:0;"><img src="https://www.esan.edu.pe/mails/maestrias/2018/Mfinanzas2018-II/inauguracion/img/1-b.jpg" width="280" alt="" style="border:0;width:100%;max-width:280px;height:auto;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;"/>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+				  </div>
+					<!--[if (gte mso 9)|(IE)]>
+</td>
+<td width="50%" valign="top">
+<![endif]-->
+					<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+						<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+							<tr>
+								<td class="master" style="text-align:center;">
+									<table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;">
+										<tr>
+											<td style="padding:0;"><img src="https://www.esan.edu.pe/mails/maestrias/2018/Mfinanzas2018-II/conferencia2/img/2-b.jpg" width="280" alt="" style="border:0;width:100%;max-width:280px;height:auto;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;"/>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+				</td>
+			</tr>
+
+
+
+
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</div>
+<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;">
+<tr bgcolor="#e7e7e7">
+	<td style="padding:0;">
+		<table class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+			<tr>
+				<td class="one-column" style="padding:0;">
+					<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;padding: 0 20px;">
+						<tr>
+							<td class="inner contents" style="padding:0;padding:10px 30px;width:100%;text-align:center;text-align: center; color: #4d4d4d; padding-top: 30px;">
+								<p class="h1" style="Margin:0;font-weight:bold;Margin-bottom:18px;font-size:18px;Margin-bottom:10px;">VENTAJAS DE NUESTRO PROGRAMA</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="padding:0;border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #86754d;">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+                            <tr>
+                                <td class="three-column" style="padding:0;text-align:center;font-size:0;padding-top:10px;padding-bottom:10px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="200" valign="top">
+<![endif]-->
+                                    <div class="column" style="width:100%;max-width:200px;display:inline-block;vertical-align:top;">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+                                            <tr>
+                                                <td class="inner" style="padding:0;padding:10px 30px;">
+                                                    <table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;">
+                                                        <tr>
+                                                            <td style="padding:0;text-align: center;">
+                                                                <img src="https://www.esan.edu.pe/mails/maestrias/2018/Mfinanzas2018-II/inauguracion/img/vision-global.png" width="140" height="78" alt="Visión global" style="border:0;width:100%;max-width:180px;height:auto;margin: 0; padding: 0;"/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text" style="padding:0;padding-top:10px;">
+                                                                <p class="titulo-opciones" style="Margin:0;font-size:16px;padding-bottom:10px;color:#4d4d4d;"><strong>Visión Global</strong></p>
+                                                                <p style="Margin:0;font-size: 12px; color: #737373;">Con enfoque internacional y visión del nuevo entorno económico financiero que enfrentan las instituciones.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+</td>
+<td width="200" valign="top">
+<![endif]-->
+                                    <div class="column" style="width:100%;max-width:200px;display:inline-block;vertical-align:top;">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+                                            <tr>
+                                                <td class="inner" style="padding:0;padding:10px 30px;">
+                                                    <table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;">
+                                                        <tr>
+                                                            <td style="padding:0;">
+                                                                <img src="https://www.esan.edu.pe/mails/maestrias/2018/Mfinanzas2018-II/inauguracion/img/viaje-internacional.png" width="140" height="78" alt="Viaje internacional" style="border:0;width:100%;max-width:180px;height:auto;margin: 0; padding: 0;"/>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text" style="padding:0;padding-top:10px;">
+                                                                <p class="titulo-opciones" style="Margin:0;font-size:16px;padding-bottom:10px;color:#4d4d4d;"><strong>Doble Certificación, Universidad Pompeu Fabra Barcelona</strong></p>
+
+                                                                <p style="Margin:0;font-size: 12px; color: #737373;">Incluye clases presenciales en la Universidad Pompeu Fabra de Barcelona.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+</td>
+<td width="200" valign="top">
+<![endif]-->
+                                    <div class="column" style="width:100%;max-width:200px;display:inline-block;vertical-align:top;">
+                                        <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+                                            <tr>
+                                                <td class="inner" style="padding:0;padding:10px 30px;">
+                                                    <table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;">
+                                                        <tr>
+                                                            <td style="padding:0;">
+                                                                <img src="https://www.esan.edu.pe/mails/maestrias/2018/Mfinanzas2018-II/inauguracion/img/profesores.png" width="140" height="78" alt="Profesores" style="border:0;width:100%;max-width:180px;height:auto;margin: 0; padding: 0;"/></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text" style="padding:0;padding-top:10px;">
+                                                                <p class="titulo-opciones" style="Margin:0;font-size:16px;padding-bottom:10px;color:#4d4d4d;"><strong>Profesores</strong></p>
+
+                                                                <p style="Margin:0;font-size: 12px; color: #737373;">Docentes nacionales e internacionales con amplias capacidades, producto de la solidez académica y la experiencia.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+                                </td>
+                            </tr>
+
+
+			<tr>
+				<td style="padding:0;padding: 0 16px;">
+					<table border="0" align="center" cellpadding="0" cellspacing="0" max-width="458px" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+						<tbody>
+							<tr>
+								<td style="padding:0;padding: 20px 0;">
+									<img src="https://www.esan.edu.pe/mails/maestrias/2019/lima/finanzas/1/img/finan-1.jpg" alt="MBA opcional" width="100%" height="auto" style="border:0;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;" align="center">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding:0;padding: 0 16px;">
+					<table border="0" align="center" cellpadding="0" cellspacing="0" max-width="458px" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+						<tbody>
+							<tr>
+								<td style="padding:0;padding-bottom: 30px;">
+									<img src="https://www.esan.edu.pe/mails/maestrias/2018/Mfinanzas2018-II/inauguracion/img/2.png" alt="Acreditado por AACSB" width="100%" height="auto" style="border:0;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;" align="center">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<table id="programa-objetivos" class="float-center" style="Margin:0 auto;border-collapse:collapse;border-spacing:0;float:none;margin:0 auto ;padding:0;text-align:center;vertical-align:top" width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tbody>
+                        <tr style="padding:0;text-align:left;vertical-align:top">
+                            <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-bottom-width:0;border-collapse:collapse!important;border-left-width:0;border-right-width:0;border-top-width:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word" valign="top" bgcolor="#000000">
+                                <!--[if gte mso 9]> <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true"
+                                    stroke="false" style="mso-width-percent:1000;"> <v:fill type="tile"
+                                    color="#000000" /> <v:textbox style="mso-fit-shape-to-text:true"
+                                    inset="0,0,0,0"> <![endif]-->
+                                <div>
+
+                                    <table class="container" style="Margin:0 auto;background:0 0;border-collapse:collapse;border-spacing:0;margin:0 auto;padding:0;text-align:inherit;vertical-align:top;width:600px" align="center">
+                                        <tbody>
+                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:40px;font-weight:400;hyphens:auto;line-height:40px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word" height="40px">&nbsp;</td>
+                                            </tr>
+                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                    <table class="row" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%">
+                                                        <tbody>
+                                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                                <th class="small-12 large-12 columns first" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:16px;padding-left:16px;padding-right:8px;text-align:left;width:284px">
+                                                                    <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
+                                                                        <tbody>
+                                                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                                                <th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
+                                                                                    <center data-parsed="" style="min-width:252px;width:100%"><img src="https://www.esan.edu.pe/mails/img/laureles-2019-b.png" alt="" class="float-center" style="-ms-interpolation-mode:bicubic;Margin:0 auto;clear:both;display:block;float:none;margin:0 auto;max-width:100%;outline:0;text-align:center;text-decoration:none;width:auto" align="middle"></center>
+                                                                                </th>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </th>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+
+                                            <tr style="padding:0;text-align:left;vertical-align:top">
+                                                <td style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:30px;font-weight:400;hyphens:auto;line-height:30px;margin:0;mso-line-height-rule:exactly;padding:0;text-align:left;vertical-align:top;word-wrap:break-word" height="30px">&nbsp;</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <!--[if gte mso 9]> </v:textbox> </v:rect> <![endif]-->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;">
+<tr bgcolor="#212121">
+	<td style="padding:0;">
+		<table border="0" cellspacing="0" cellpadding="0" class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+			<tr>
+				<td class="two-column" style="padding:0;text-align:center;font-size:0;">
+					<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<![endif]-->
+					<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+						<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+							<tr>
+								<td class="videos" style="padding:0;padding:30px 18px;text-align:center;">
+									<table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;">
+										<tr>
+											<td style="padding:0;">
+												<a href="https://www.youtube.com/watch?v=U-aMqdIWRFM" target="_blank" style="text-decoration:underline;"><img src="https://www.esan.edu.pe/mails/maestrias/2018/Mfinanzas2018-II/inauguracion/img/vid-2.jpg" width="516" alt="Video Maestría en Finanzas" style="border:0;width:100%;max-width:280px;height:auto;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;"/></a>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-top: 10px;text-align: center;"><span style="color: #fff;">Conoce más de nuestra Maestría en Finanzas</span>
+												</td>
+											</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+</td>
+<td width="50%" valign="top">
+<![endif]-->
+					<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+						<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+							<tr>
+								<td class="videos" style="padding:0;padding:30px 18px;text-align:center;">
+									<table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;">
+										<tr>
+											<td style="padding:0;">
+												<a href="https://www.youtube.com/watch?v=lm5fAnkOmzs&feature=youtu.be" target="_blank" style="text-decoration:underline;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/vid-1.jpg" width="280" alt="Video ESAN" style="border:0;width:100%;max-width:280px;height:auto;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;"/></a>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-top: 10px;text-align: center;"><span style="color: #fff;">Conoce más de ESAN</span>
+												</td>
+											</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+<tr>
+	<td class="two-column" style="padding:0;text-align:center;font-size:0;padding: 20px 0;">
+		<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<![endif]-->
+		<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+			<table cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+				<tr>
+					<td class="videos" style="padding:0;padding:30px 18px;text-align:center;">
+						<table cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+							<tr>
+								<td valign="middle" style="padding:0;">
+									<img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/logo-maestria1.png" width="236" alt="ESAN Maestrías especializadas" style="border:0;width:100%;max-width:280px;height:auto;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;"/>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--[if (gte mso 9)|(IE)]>
+</td>
+<td width="50%" valign="top">
+<![endif]-->
+		<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+			<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+				<tr>
+					<td class="inner" style="padding:0;padding:10px 30px;">
+						<table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;">
+							<tr>
+								<td class="text" style="padding:0;padding-top:10px;">
+									<p style="Margin:0;color: #4d4d4d; font-size: 14px; padding-bottom: 10px;"><strong>INFORMES E INSCRIPCIONES</strong></p>
+
+									<p style="Margin:0;color: #737373; font-size: 14px; text-decoration: none;">Asesora comercial: <span style="color: #414141">Cintia La Madrid</span><br>
+										Teléfonos: <span style="color: #414141">317 7226</span> | Anexo: <span style="color: #414141">44132</span><br>
+										Cel: <span style="color: #414141">942 035 676</span><br>
+										E-mail: <a href="mailto:clamadrid@esan.edu.pe" style="text-decoration:underline;color: #414141; text-decoration: none;">clamadrid@esan.edu.pe</a></p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+	</td>
+</tr>
+</table>
+<table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+<tr>
+	<td bgcolor="#be1735" height="4px" style="padding:0;font-size: 1px; line-height: 1px;"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;">
+<tr bgcolor="#666666">
+	<td style="padding:0;">
+		<table border="0" cellspacing="0" cellpadding="0" class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+			<tr>
+				<td class="one-column" style="padding:0;">
+					<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;padding: 0 20px;">
+						<tr>
+							<td class="inner contents" style="padding:0;padding:10px 30px;width:100%;text-align:center;text-align: center;">
+								<p style="Margin:0;font-size:18px;Margin-bottom:10px;color: #ffffff; font-size: 11px; padding-top: 10px;">Síguenos</p>
+								<table border="0" cellspacing="0" cellpadding="0" align="center" class="socialicons" style="border-spacing:0;font-family:sans-serif;color:#333333;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+									<tbody>
+										<tr>
+											<td style="padding:0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt; text-align: center; padding: 10px;"><a href="https://twitter.com/esanperu/" target="_new" style="text-decoration:underline;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/tt.png" alt="Twitter" width="25" height="auto" style="border:0;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+											<td style="padding:0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt; text-align: center; padding: 10px;"><a href="https://www.instagram.com/conexion_esan/" target="_new" style="text-decoration:underline;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/instag.png" alt="Instagram" width="25" height="auto" style="border:0;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+											<td style="padding:0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt; text-align: center; padding: 10px;"><a href="https://www.facebook.com/esanmaestrias/" target="_blank" style="text-decoration:underline;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/fb.png" alt="Facebook" width="12" height="23" style="border:0;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+											<td style="padding:0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt; text-align: center; padding: 10px;"><a href="https://www.youtube.com/channel/UCm9vhvA4Ka7iRXbuJVWGTYQ" target="_blank" style="text-decoration:underline;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/yt.png" alt="Youtube" width="25" height="auto" style="border:0;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+											<td style="padding:0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt; text-align: center; padding: 10px;"><a href="https://www.esan.edu.pe/conexion/" target="_blank" style="text-decoration:underline;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/conex.png" alt="conexión esan" width="25" height="auto" style="border:0;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+										</tr>
+									</tbody>
+								</table>
+								<p style="Margin:0;font-size:18px;Margin-bottom:10px;margin: 20px 0px; color: #ffffff; font-size: 11px; line-height: 13px;">© Universidad ESAN 2018<br>
+									¿No puedes ver bien este mensaje? <span style="text-decoration: none;"><a href="https://www.esan.edu.pe/mails/maestrias/2019/lima/finanzas/1/exalumnos/basededatos" target="_blank" style="text-decoration:underline;color: #ffffff;">Visita la versión web</a></span><br>
+									<span style="text-decoration: none;">Si no deseas recibir nuestros correos <a href="https://www.esan.edu.pe/mails/maestrias/2018/maodp/[UNSUBSCRIBE]" style="text-decoration:underline;color: #ffffff;">Date de baja</a></span></p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,865 @@
+<html>
+<head>
+<title>ESAN</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse;}
+</style>
+<![endif]-->
+<style type="text/css">
+/* Basics */
+body {
+margin: 0 !important;
+padding: 0;
+background-color: #ffffff;
+}
+table {
+border-spacing: 0;
+font-family: sans-serif;
+color: #333333;
+}
+td {
+padding: 0;
+}
+img {
+border: 0;
+}
+div[style*="margin: 16px 0"] {
+margin:0 !important;
+}
+.wrapper {
+width: 100%;
+table-layout: fixed;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+.webkit {
+max-width: 600px;
+margin: 0 auto;
+}
+.outer {
+Margin: 0 auto;
+width: 100%;
+max-width: 600px;
+}
+.outer-full {
+width: 100%;
+}
+.inner {
+padding: 10px 30px;
+}
+.inner2 {
+padding: 10px;
+}
+.clic img {
+width: 100%;
+max-width: 9px; 
+height: auto;
+padding: 10px;
+}
+.cta {
+padding: 0;
+}
+.videos {
+padding: 30px 18px;
+text-align: center;
+}
+.contents {
+width: 100%;
+}
+p {
+Margin: 0;
+}
+a {
+text-decoration: underline;
+}
+.h1 {
+font-size: 18px;
+font-weight: bold;
+Margin-bottom: 18px;
+}
+.h2 {
+font-size: 18px;
+font-weight: bold;
+Margin-bottom: 12px;
+}
+.full-width-image img {
+width: 100%;
+max-width: 600px;
+height: auto;
+}
+.header {
+width: 100%;
+margin: 0 auto;
+background-color: #02a1da;
+}
+	.titulo {
+	font-size: 46px;
+	color: #ffffff;
+	letter-spacing: -1px;
+		line-height: 48px;
+
+	}
+.titulo-opciones {
+font-size: 16px;
+padding-bottom: 10px;
+color: #4d4d4d;
+}
+.tit-esp {
+font-size: 13px;
+text-align: center;
+padding-bottom: 10px;
+}
+.master {
+padding: 10px;
+text-align: center;
+}
+.areas-desktop {
+display: block;
+}
+.areas-movil {
+display: none;
+}
+/* One column layout */
+.one-column .contents {
+text-align: center;
+}
+.one-column p {
+font-size: 18px;
+Margin-bottom: 10px;
+}
+#responsive {
+display: none;
+}
+#desktop {
+display: block;
+}
+.evento {
+font-size: 18px;	
+color: #ffffff; 
+padding-bottom: 8px;
+padding-top: 30px;
+}
+
+/*Two column layout*/
+.two-column {
+text-align: center;
+font-size: 0;
+}
+.two-column .column {
+width: 100%;
+max-width: 280px;
+display: inline-block;
+vertical-align: top;
+}
+.two-column .contents {
+font-size: 14px;
+text-align: left;
+}
+.two-column img {
+width: 100%;
+max-width: 280px;
+height: auto;
+}
+.two-column .text {
+padding-top: 10px;
+}
+
+/*Three column layout*/
+.three-column {
+text-align: center;
+font-size: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.three-column .column {
+width: 100%;
+max-width: 200px;
+display: inline-block;
+vertical-align: top;
+}
+.three-column img {
+width: 100%;
+max-width: 180px;
+height: auto;
+}
+.three-column .contents {
+font-size: 14px;
+text-align: center;
+}
+.three-column .text {
+padding-top: 10px;
+}
+
+/* Left sidebar layout */
+.left-sidebar {
+text-align: left;
+font-size: 0;
+}
+.left-sidebar .column {
+width: 100%;
+display: inline-block;
+vertical-align: middle;
+}
+.left-sidebar .left {
+max-width: 343px;
+}
+.left-sidebar .right {
+max-width: 50px;
+}
+.left-sidebar .img {
+width: 100%;
+max-width: 343px;
+height: auto;
+}
+.left-sidebar .contents {
+font-size: 14px;
+text-align: center;
+}
+.left-sidebar a {
+color: #02a1da;
+}
+
+/* Right sidebar layout */
+.right-sidebar {
+text-align: center;
+font-size: 0;
+}
+.right-sidebar .column {
+width: 100%;
+display: inline-block;
+vertical-align: middle;
+}
+.right-sidebar .left {
+max-width: 100px;
+}
+.right-sidebar .right {
+max-width: 500px;
+}
+.right-sidebar .img {
+width: 100%;
+max-width: 80px;
+height: auto;
+}
+.right-sidebar .contents {
+font-size: 14px;
+text-align: center;
+}
+.right-sidebar a {
+color: #70bbd9;
+}
+/*Media Queries*/
+@media screen and (max-width: 620px) {
+.three-column .column {
+	max-width: 33% !important;
+}
+.two-column .column {
+	max-width: 50% !important;
+}
+.left-sidebar .right{
+	max-width: 100%;
+	margin: auto;
+}
+.cta {
+	padding: 0;
+}
+.inner{
+	text-align: center;
+}
+.left-sidebar .left {
+	max-width: 100%;
+	width: 100%;
+	margin: auto;
+}
+.left-sidebar .column {
+	display: block !important;
+	text-align: center;
+	vertical-align: middle;
+}
+#desktop {
+	display: none;
+}
+#responsive {
+	display: block !important;
+}
+#responsive .inner {
+	display: block !important;
+	text-align: center;
+}
+	.titulo {
+padding: 0 0 20 !important;
+}
+.areas-desktop {
+display: none;
+}
+.areas-movil {
+display: block;
+max-width: 236px;
+margin: auto;
+}
+}
+@media screen and (max-width: 400px) {
+.two-column .column,
+.three-column .column {
+	max-width: 90% !important;
+}
+.two-column img {
+	max-width: 100% !important;
+}
+.two-column .contents {
+	text-align: center;
+}
+.three-column img {
+	max-width: 50% !important;
+}
+.clic img {
+width: 100%;
+max-width: 9px!important; 
+height: auto;
+padding: 10px;
+}
+.cta {
+	padding: 0;
+}
+.header{
+	overflow: hidden;
+}
+.three-column .column{
+	max-width: 53% ;
+	margin-top: 30px;
+	margin: auto ;
+}
+.outer .three-column .contents{
+	margin-top: 30px;
+}
+
+.left-sidebar{
+	padding-bottom: 24px;
+}
+.inner{
+	text-align: center!important;
+}
+.inner img{
+	max-width: 100%;
+	width: 100%;
+	margin: auto;
+}
+#desktop {
+	display: none;
+}
+.responsive .inner {
+	display: block !important;
+	text-align: center;
+}
+.titulo {
+font-size: 30px!important;
+line-height: 30px!important;
+padding: 0 0 20 !important;
+}
+.logo-400 {
+	max-width: 70%!important;
+}
+.text {
+text-align: center;	
+}
+.section-padding {
+padding: 15px!important;	
+}
+.logos-univ {
+	max-width: 300px!important;
+}
+.evento {
+font-size: 16px;	
+}
+	.areas-desktop {
+display: none;
+}
+.areas-movil {
+display: block;
+max-width: 236px;
+margin: auto;
+}
+}
+</style>
+</head>
+<body style="padding:0;background-color:#ffffff;margin:0 !important;">
+<center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+<div class="header">
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%" align="center">
+<tr>
+<td>
+<![endif]-->
+
+
+	<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center">
+<tr>
+	<td width="100%" align="center" bgcolor="#ffffff" alt="" style="padding-bottom: 30px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-image: url(https://www.esan.edu.pe/mails/pee/2018/4pee/nuevo/areas/img/fondo-inicio.jpg);background-repeat: no-repeat;background-position: center center;background-size: cover;max-width: 100%;height: auto;color: #060;border-top:solid;border-top-width: 4px;border-top-color: #DD0333;">
+	   <!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+			<td align="center" valign="top" width="100%">
+			<![endif]-->
+<table width="100%" style="max-width: 600px;">
+		<tr>
+			<td align="left" style="padding: 30px 20px 10px;text-align: left;"><img src="https://www.esan.edu.pe/mails/pee/2018/4pee/nuevo/derecho-corporativo/conferencia-general/img/logo-pee-blanco.png" alt="Logo" width="100%" height="auto" style="padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;width: 300px; height: auto;" border="0"></td></tr></table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;width: 100% !important;" class="responsive-table">
+		 <tr>
+		   <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			 <!-- HERO IMAGE -->
+			 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+			   <tr>
+				 <td align="left" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt; padding: 0 20px;">
+		<p class="evento">{NOMBRE} participa del:</p>
+		<p class="titulo"><strong>PEE en Derecho<br> Corporativo</strong></p>
+		<p style="color: #ffffff; font-size: 20px; padding: 30px 0px; line-height: 26px;">
+del 22 de octubre al 14 de diciembre</p>
+		         </td>
+					</tr>
+			<tr>
+				<table width="100%">
+				<tr>
+					<td><table align="left" border="0" cellpadding="0" cellspacing="0" style="border-style: solid;padding: 20px 20px;">
+<tr>
+                                    <td ><table align="center" border="0" cellpadding="0" cellspacing="0" style="border-style: solid; border-width: 0px;">
+												   <tr>
+			 <td><a href="https://www.esan.edu.pe/pee/derecho-corporativo/solicitud-de-informacion/conferencia/index.php" target="_blank"
+style="background-color:#dd0333;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:1rem;font-weight:bold;text-align:center;text-decoration:none;padding: 20px;-webkit-text-size-adjust:none;">SOLICITA MÁS INFORMACIÓN</a></td>
+		   </tr>
+                         </table>
+                                    </td>
+                                </tr>
+		 </table>
+					</td>
+				</tr>
+			</table></tr>
+<!--				<tr>
+				  <td style="text-align: center">
+					  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+				    <tbody>
+				      <tr>
+				        <td style="text-align: center; padding-top: 40px; font-size: 1rem;"><strong>Conoce nuestras Áreas de Especialización</strong></td>
+				        </tr>
+				      <tr>
+				        <td align="center" style="padding: 10px; text-align: center;"><a href="#titulouno"><img src="https://www.esan.edu.pe/mails/pee/2018/3pee/derecho-corporativo/nuevo/inauguracion-general/img/flecha-abajo.png" alt="Logo" width="100%" height="auto" style="margin: auto; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;max-width: 24px; height: auto;" border="0"></a></td>
+				        </tr>
+				      </tbody>
+				    </table></td></tr>-->
+             </table>
+
+
+<!-- COPY -->
+
+
+<!-- FIN COPY -->
+
+				 </td>
+		    </tr>
+			 </table>
+		   </td>
+		 </tr>
+	   </table>
+	   <!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+
+
+</div>
+<div class="webkit" style="max-width:600px;margin:0 auto;">
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center">
+<tr>
+<td>
+<![endif]-->
+		<table class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+			<tr>
+				<td class="one-column" style="padding:0;">
+		<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;padding: 0;">
+						<tr>
+							<td class="inner contents" style="width:100%;text-align:center;text-align: center; color: #4d4d4d; padding-top: 30px;">
+								<p class="h1" style="font-weight:bold;font-size:18px;">CERTIFICADO DE DERECHO ADMINISTRATIVO</p></td>
+						</tr>
+						<tr>
+							<td style="padding:0;border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #dd0333;">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+<table border="0" cellspacing="0" cellpadding="0" class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+	<tr>
+		<td class="one-column" style="padding:0;">
+			<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;">
+				<tr>
+					<td class="inner contents" style="width:100%;text-align:center;padding-top: 26px; line-height: 24px;"><p style="font-family: sans-serif; font-size: 16px;color:#4D4D4D;">El participante desarrollará una sólida base del mundo legal administrativo, profundizando en los diversos procesos técnicos involucrados en la promoción de la inversión privada en el Perú. Asimismo, se actualizarán los conocimientos en Derecho Administrativo, Organización del Estado y la Administración Pública con las últimas tendencias internacionales y se brindará una visión integral sobre el procedimiento administrativo sancionador.</p></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</div>
+                <table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center">
+                <tr bgcolor="#e7e7e7">
+                    <td style="padding: 20px 0;">
+                <table class="outer" align="center">
+                <tr>
+                    <td class="one-column">
+                        <table width="100%" style="padding: 0 20px;">
+                            <tr>
+                                <td class="inner contents" style="text-align: center; color: #4d4d4d;">
+                                    <p class="h1" style="color: #4d4d4d;">CURSOS DE ESTA CONVOCATORIA</p>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </td>
+                </tr>
+				<tr>
+					<td class="two-column">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner2"><a href="https://www.esan.edu.pe/pee/derecho-corporativo/areas/derecho-administrativo/actividad-administrativa-de-fiscalizacion/" target="_blank" style="text-decoration: none;">
+										<table class="contents">
+												<tr>
+												<td height="64" bgcolor="#ffffff"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+												    <tr>
+												      <td style="font-family: sans-serif; font-size: 12px; text-transform: uppercase;color: #4d4d4d;padding: 10px 0 10px 20px; line-height: 13px;"><strong>ACTIVIDAD ADMINISTRATIVA DE FISCALIZACIÓN</strong></td>
+												      <td class="clic" width="40" align="center"  style="padding:10;"><img src="https://www.esan.edu.pe/mails/pee/2018/3pee/derecho-corporativo/nuevo/img/more.png" width="9" alt="" style="border:0;width:100%;max-width:9px;height:auto;margin: 0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;"/></td>
+											        </tr>
+											    </table></td>
+											</tr>
+											<tr>
+												<td height="2" bgcolor="#DD0333" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+											</tr>
+										</table>
+									</a></td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner2"><a href="https://www.esan.edu.pe/pee/derecho-corporativo/areas/derecho-administrativo/eliminacion-de-barreras-burocraticas/" style="text-decoration: none;" target="_blank">
+										<table class="contents">
+												<tr>
+												<td height="64" bgcolor="#ffffff"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+												    <tr>
+												      <td style="font-family: sans-serif; font-size: 12px; text-transform: uppercase;color: #4d4d4d;padding: 10px 0 10px 20px; line-height: 13px;"><strong>ELIMINACIÓN DE BARRERAS BUROCRÁTICAS</strong></td>
+												      <td class="clic" width="40" align="center"  style="padding:10;"><img src="https://www.esan.edu.pe/mails/pee/2018/3pee/derecho-corporativo/nuevo/img/more.png" width="9" alt="" style="border:0;width:100%;max-width:9px;height:auto;margin: 0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;"/></td>
+											        </tr>
+											    </table></td>
+											</tr>
+											<tr>
+												<td height="2" bgcolor="#DD0333" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+											</tr>
+										</table>
+									</a></td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="two-column">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner2"><a href="https://www.esan.edu.pe/pee/derecho-corporativo/areas/derecho-administrativo/contratacion-de-obra-publica-para-abogados/" style="text-decoration: none;" target="_blank">
+										<table class="contents">
+												<tr>
+												<td height="64" bgcolor="#ffffff"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+												    <tr>
+												      <td style="font-family: sans-serif; font-size: 12px; text-transform: uppercase;color: #4d4d4d;padding: 10px 0 10px 20px;line-height: 13px;"><strong>CONTRATACIÓN DE OBRA PÚBLICA PARA ABOGADOS
+</strong></td>
+												      <td class="clic" width="40" align="center"  style="padding:10;"><img src="https://www.esan.edu.pe/mails/pee/2018/3pee/derecho-corporativo/nuevo/img/more.png" width="9" alt="" style="border:0;width:100%;max-width:9px;height:auto;margin: 0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;"/></td>
+											        </tr>
+											    </table></td>
+											</tr>
+											<tr>
+												<td height="2" bgcolor="#DD0333" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+											</tr>
+										</table>
+									</a></td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner2"><a href="https://www.esan.edu.pe/pee/derecho-corporativo/areas/derecho-administrativo/-procedimiento-administrativo-general/" style="text-decoration: none;" target="_blank">
+										<table class="contents">
+												<tr>
+												<td height="64" bgcolor="#ffffff"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+												    <tr>
+												      <td style="font-family: sans-serif; font-size: 12px; text-transform: uppercase;color: #4d4d4d;padding: 10px 0 10px 20px; line-height: 13px;"><strong>PROCEDIMIENTO ADMINISTRATIVO GENERAL</strong></td>
+												      <td class="clic" width="40" align="center"  style="padding:10;"><img src="https://www.esan.edu.pe/mails/pee/2018/3pee/derecho-corporativo/nuevo/img/more.png" width="9" alt="" style="border:0;width:100%;max-width:9px;height:auto;margin: 0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;"/></td>
+											        </tr>
+											    </table></td>
+											</tr>
+											<tr>
+												<td height="2" bgcolor="#DD0333" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+											</tr>
+										</table>
+									</a></td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+				<tr>
+					<td class="two-column">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner2"><a href="https://www.esan.edu.pe/pee/derecho-corporativo/areas/derecho-administrativo/regimen-juridico-de-la-proteccion-de-datos-personales/" style="text-decoration: none;" target="_blank">
+										<table class="contents">
+												<tr>
+												<td height="64" bgcolor="#ffffff"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+												    <tr>
+												      <td style="font-family: sans-serif; font-size: 12px; text-transform: uppercase;color: #4d4d4d;padding: 10px 0 10px 20px;line-height: 13px;"><strong>RÉGIMEN JURÍDICO DE LA PROTECCIÓN DE DATOS PERSONALES
+</strong></td>
+												      <td class="clic" width="40" align="center"  style="padding:10;"><img src="https://www.esan.edu.pe/mails/pee/2018/3pee/derecho-corporativo/nuevo/img/more.png" width="9" alt="" style="border:0;width:100%;max-width:9px;height:auto;margin: 0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;"/></td>
+											        </tr>
+											    </table></td>
+											</tr>
+											<tr>
+												<td height="2" bgcolor="#DD0333" style="font-size: 1px; line-height: 1px;">&nbsp;</td>
+											</tr>
+										</table>
+									</a></td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+<td></td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+
+            </table>
+
+                    </td>
+                </tr>
+                </table>
+<div class="webkit" style="max-width:600px;margin:0 auto;">
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center">
+<tr>
+<td>
+<![endif]-->
+<table>
+<tr>
+   <td class="full-width-image" style="padding: 30px 10px;"><span class="full-width-image" style="padding-bottom:20px;padding-top:0;padding-right:0;padding-left:0;"><img alt="" src="https://www.esan.edu.pe/mails/pee/2018/4pee/nuevo/derecho-corporativo/conferencia-general/img/laureles-esan-2018.png" style="border-width: 0px; outline-style: none; text-decoration: none; width: 100%; max-width: 630px;" /></span></td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</div>
+
+<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;">
+<tr bgcolor="#212121">
+	<td style="padding:0;">
+		<table border="0" cellspacing="0" cellpadding="0" class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+			<tr>
+				<td class="two-column" style="padding:0;text-align:center;font-size:0;">
+					<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<![endif]-->
+					<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+						<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+							<tr>
+								<td class="videos" style="padding:0;padding:30px 18px;text-align:center;">
+									<table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:12px;text-align:left;padding: ">
+										<tr>
+											<td style="padding:0;">
+												<a href="https://youtu.be/BCKfaxlnYfQ" target="_blank" style="text-decoration:underline;"><img src="https://www.esan.edu.pe/mails/pee/2018/3pee/derecho-corporativo/nuevo/inauguracion-general/img/vid-2.jpg" width="516" alt="Video Maestría en Finanzas" style="border:0;width:100%;max-width:280px;height:auto;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;"/></a>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding-top: 10px;text-align: center; padding: 10px;"><span style="color: #fff;">Conoce más del PEE en Derecho Corporativo</span>
+										  </td>
+									  </tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+</td>
+<td width="50%" valign="top">
+<![endif]-->
+					<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+						<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+							<tr>
+								<td class="videos" style="padding:0;padding:30px 18px;text-align:center;">
+									<table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:12px;text-align:left;">
+										<tr>
+											<td style="padding:0;">
+												<a href="https://www.youtube.com/watch?v=lm5fAnkOmzs&feature=youtu.be" target="_blank" style="text-decoration:underline;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/vid-1.jpg" width="280" alt="Video ESAN" style="border:0;width:100%;max-width:280px;height:auto;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;"/></a>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding: 10px;text-align: center;"><span style="color: #fff;">Conoce más de ESAN</span>
+										  </td>
+									  </tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+<tr>
+	<td class="two-column" style="padding:0;text-align:center;font-size:0;padding: 20px 0;">
+		<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<![endif]-->
+		<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+			<table cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+				<tr>
+					<td class="videos" style="padding:16px 18px;text-align:center;">
+						<table cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+							<tr>
+								<td valign="middle" style="padding:0;">
+									<img src="https://www.esan.edu.pe/mails/pee/2018/3pee/derecho-corporativo/nuevo/inauguracion-general/img/logo-esan.png" width="100%" alt="ESAN Maestrías especializadas" style="border:0;width:100%;max-width:226px;height:auto;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;"/>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--[if (gte mso 9)|(IE)]>
+</td>
+<td width="50%" valign="top">
+<![endif]-->
+		<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+			<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+				<tr>
+					<td class="inner" style="padding:0;padding:10px 30px;">
+						<table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;">
+							<tr>
+								<td class="text" style="padding:0;padding-top:10px;">
+									<p style="Margin:0;color: #4d4d4d; font-size: 14px; padding-bottom: 10px;"><strong>INFORMES E INSCRIPCIONES</strong></p>
+
+									<p style="Margin:0;color: #737373; font-size: 14px; text-decoration: none;">Teléfonos: 317 7226<br>
+										E-mail: <a href="mailto:informes@esan.edu.pe" style="text-decoration:underline;color: #414141; text-decoration: none;">informes@esan.edu.pe</a></p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+	</td>
+</tr>
+</table>
+<table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+<tr>
+	<td bgcolor="#be1735" height="4px" style="padding:0;font-size: 1px; line-height: 1px;"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;">
+<tr bgcolor="#666666">
+	<td style="padding:0;">
+		<table border="0" cellspacing="0" cellpadding="0" class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+			<tr>
+				<td class="one-column" style="padding:0;">
+					<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;padding: 0 20px;">
+						<tr>
+							<td class="inner contents" style="width:100%;text-align:center;text-align: center;">
+								<p style="font-size:18px;Margin: 20px 10px; color: #ffffff; font-size: 11px; line-height: 13px;">© Universidad ESAN 2018<br>
+									¿No puedes ver bien este mensaje? <span style="text-decoration: none;"><a href="https://www.esan.edu.pe/mails/pee/2018/4pee/nuevo/areas/derecho-administrativo/inicio/" target="_blank" style="text-decoration:underline;color: #ffffff;">Visita la versión web</a></span><br>
+									<span style="text-decoration: none;">Si no deseas recibir nuestros correos <a href="https://www.esan.edu.pe/mails/maestrias/2018/maodp/[UNSUBSCRIBE]" style="text-decoration:underline;color: #ffffff;">Date de baja</a></span></p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+
+</center>
+</body>
+</html>

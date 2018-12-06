@@ -1,0 +1,1033 @@
+ <html>
+<head>
+<title>ESAN</title>
+<meta charset= "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--[if (gte mso 9)|(IE)]>
+<style type="text/css">
+table {border-collapse: collapse;}
+</style>
+<![endif]-->
+<style type="text/css">
+/* Basics */
+body {
+margin: 0 !important;
+padding: 0;
+background-color: #ffffff;
+}
+table {
+border-spacing: 0;
+font-family: sans-serif;
+color: #333333;
+}
+td {
+padding: 0;
+}
+img {
+border: 0;
+
+}
+div[style*="margin: 16px 0"] {
+margin:0 !important;
+}
+.wrapper {
+width: 100%;
+table-layout: fixed;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+.webkit {
+max-width: 600px;
+margin: 0 auto;
+}
+.outer {
+Margin: 0 auto;
+width: 100%;
+max-width: 600px;
+}
+.outer-full {
+width: 100%;
+}
+.inner {
+padding: 10px 30px;
+}
+.cta {
+padding: 0;
+}
+.videos {
+padding: 30px 18px;
+text-align: center;
+}
+.contents {
+width: 100%;
+}
+p {
+Margin: 0;
+}
+a {
+text-decoration: underline;
+}
+.h1 {
+font-size: 18px;
+font-weight: bold;
+Margin-bottom: 18px;
+}
+.h2 {
+font-size: 18px;
+font-weight: bold;
+Margin-bottom: 12px;
+}
+.full-width-image img {
+width: 100%;
+max-width: 600px;
+height: auto;
+}
+.header {
+width: 100%;
+margin: 0 auto;
+background-color: #02a1da;
+}
+.titulo-opciones {
+font-size: 16px;
+padding-bottom: 10px;
+color: #4d4d4d;
+}
+.master {
+padding: 10px;
+text-align: center;
+}
+
+/* One column layout */
+.one-column .contents {
+text-align: center;
+}
+.one-column p {
+font-size: 18px;
+Margin-bottom: 10px;
+}
+#responsive {
+display: none;
+}
+#desktop {
+display: block;
+}
+
+/*Two column layout*/
+.two-column {
+text-align: center;
+font-size: 0;
+}
+.two-column .column {
+width: 100%;
+max-width: 230px;
+display: inline-block;
+vertical-align: top;
+}
+.two-column .contents {
+font-size: 14px;
+text-align: left;
+}
+.two-column img {
+width: 100%;
+max-width: 280px;
+height: auto;
+}
+.two-column .text {
+padding-top: 10px;
+}
+
+/*Three column layout*/
+.three-column {
+text-align: center;
+font-size: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+.three-column .column {
+width: 100%;
+max-width: 200px;
+display: inline-block;
+vertical-align: top;
+}
+.three-column img {
+width: 100%;
+max-width: 180px;
+height: auto;
+}
+.three-column .contents {
+font-size: 14px;
+text-align: center;
+}
+.three-column .text {
+padding-top: 10px;
+}
+
+/* Left sidebar layout */
+.left-sidebar {
+text-align: left;
+font-size: 0;
+}
+.left-sidebar .column {
+width: 100%;
+display: inline-block;
+vertical-align: middle;
+}
+.left-sidebar .left {
+max-width: 343px;
+}
+.left-sidebar .right {
+max-width: 50px;
+}
+.left-sidebar .img {
+width: 100%;
+max-width: 343px;
+height: auto;
+}
+.left-sidebar .contents {
+font-size: 14px;
+text-align: center;
+}
+.left-sidebar a {
+color: #02a1da;
+}
+
+@media all and ( max-width: 600px ) {
+*[id]#wrapper + table,  *[class].container,  *[class].menu {
+	min-width: 0 !important;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	width: 100% !important;
+}
+}
+
+@media screen and (max-width: 525px) {
+
+
+/* ALLOWS FOR FLUID TABLES */
+.wrapper {
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+}
+
+/* Right sidebar layout */
+.right-sidebar {
+text-align: center;
+font-size: 0;
+}
+.right-sidebar .column {
+width: 100%;
+display: inline-block;
+vertical-align: middle;
+}
+.right-sidebar .left {
+max-width: 100px;
+}
+.right-sidebar .right {
+max-width: 500px;
+}
+.right-sidebar .img {
+width: 100%;
+max-width: 80px;
+height: auto;
+}
+.right-sidebar .contents {
+font-size: 14px;
+text-align: center;
+}
+.right-sidebar a {
+color: #70bbd9;
+}
+/*Media Queries*/
+@media screen and (max-width: 620px) {
+.three-column .column {
+	max-width: 33% !important;
+}
+.two-column .column {
+	max-width: 50% !important;
+}
+.left-sidebar .right{
+	max-width: 100%;
+	margin: auto;
+}
+.cta {
+	padding: 0;
+}
+	.cta-button{
+		padding-left: 0!important;
+	}
+.inner{
+	text-align: center;
+}
+.left-sidebar .left {
+	max-width: 100%;
+	width: 100%;
+	margin: auto;
+}
+.left-sidebar .column {
+	display: block !important;
+	text-align: center;
+	vertical-align: middle;
+}
+#desktop {
+	display: none;
+}
+#responsive {
+	display: block !important;
+}
+#responsive .inner {
+	display: block !important;
+	text-align: center;
+}
+	.titulo {
+padding: 20px;
+max-width: 300px;
+}
+}
+@media screen and (max-width: 400px) {
+
+.icon-400 {
+	width: 140px!important;
+	}
+.two-column .column,
+.three-column .column {
+	max-width: 90% !important;
+}
+.two-column img {
+	max-width: 100% !important;
+}
+.two-column .contents {
+	text-align: center;
+}
+.three-column img {
+	max-width: 50% !important;
+}
+.cta {
+	padding: 0;
+}
+	.cta-button{
+		padding-left: 0!important;
+	}
+.header{
+	overflow: hidden;
+}
+.three-column .column{
+	max-width: 53% ;
+	margin-top: 30px;
+	margin: auto ;
+}
+.outer .three-column .contents{
+	margin-top: 30px;
+}
+.one-column{
+	padding-top:  30px
+}
+.left-sidebar{
+	padding-bottom: 24px;
+}
+.inner{
+	text-align: center!important;
+}
+.inner img{
+	max-width: 100%;
+	width: 100%;
+	margin: auto;
+}
+#desktop {
+	display: none;
+}
+.responsive .inner {
+	display: block !important;
+	text-align: center;
+}
+	.titulo {
+font-size: 30px!important;
+line-height: 30px!important;
+padding: 20px;
+}
+	.logo-400 {
+		max-width: 70%!important;
+	}
+	.text {
+	text-align: center;
+	}
+	.section-padding {
+	padding: 15px!important;
+	}
+	.logos-univ {
+		max-width: 300px!important;
+	}
+}
+
+img {
+	border: 0;
+	height: auto;
+	line-height: 100%;
+	outline: none;
+	text-decoration: none;
+}
+.icon {
+}
+</style>
+</head>
+<body style="padding:0;background-color:#ffffff;margin:0 !important;">
+<center class="wrapper" style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+<div class="header">
+<!--[if (gte mso 9)|(IE)]>
+<table width="100%" align="center">
+<tr>
+<td>
+<![endif]-->
+
+
+	<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center">
+<tr>
+	<td width="100%" align="center" bgcolor="#657198" class="section-padding imagen-background" alt="" style="padding: 0px 15px 0px 15px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;mso-table-lspace: 0pt;mso-table-rspace: 0pt;background-image: url(https://www.esan.edu.pe/mails/maestrias/2019/lima/supply-chain-management/1/Inicio/img/img_CCL_supply-HTML.jpg);background-repeat: no-repeat;background-position: center center;background-size: cover;max-width: 100%;height: auto;color: #060; border-top: solid; border-top-width: 4px; border-top-color: #dd0333;">
+	   <!--[if (gte mso 9)|(IE)]>
+			<table align="center" border="0" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+			<td align="center" valign="top" width="100%">
+			<![endif]-->
+	   <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;width: 100% !important;" class="responsive-table">
+		 <tr>
+		   <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+			 <!-- HERO IMAGE -->
+			 <table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+			   <tr>
+				 <td align="center" class="padding" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;padding: 0px 5% 15px 5% !important;">
+
+				 </td>
+			   </tr>
+			   <tr>
+				 <td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;">
+
+
+
+
+
+
+
+
+
+
+					<table width="100%" style="display: inline-block;padding: 15px 0;">
+						<tbody><tr>
+							<td>
+
+									<div class="column" style="width:50%;min-width:400px;display:inline-block;vertical-align:top;">
+											<table border="0" cellspacing="0" cellpadding="0" width="50%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+												  <tbody><tr>
+													  <td valign="top" class="master" style="text-align:center;padding: 0;">
+														  <table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;">
+															  <tbody><tr>
+																  <td style="padding:0;">
+																		<p class="titulo" style="font-size: 44px; color: #ffffff; line-height: 46px; padding: 30px  0 30px; text-transform: uppercase;">
+																				<strong>MAESTRÍA EN SUPPLY CHAIN MANAGEMENT</strong>
+																			</p>
+																  </td>
+															  </tr>
+														  </tbody></table>
+													  </td>
+												  </tr>
+											  </tbody></table>
+										</div><div class="column " style="width:50%;max-width:197px;display:inline-block;vertical-align:top;">
+												<table border="0" cellspacing="0" cellpadding="0" width="100%">
+													<tbody><tr>
+													<td style="padding: 40px 0 30px">
+														<img src="https://www.esan.edu.pe/mails/maestrias/2018/supply-chain/fap/img/dscto.png" alt="" style="margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;" width="223" height="102" border="0">
+												  </td></tr>
+												  </tbody></table>
+											</div>
+
+
+
+
+								<p style="font-size: 26px; color: #ffffff;padding-bottom: 30px">Inauguración:<br><strong>09 de Mayo</strong></p>
+								<p style="padding-bottom: 20px;">
+									<img src="https://www.esan.edu.pe/mails/maestrias/organizacion-y-direccion-de-personas/inicio/img/logo-esan-blanco.png" alt="Logo" width="200" height="auto" style="margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;" border="0">
+								</p>
+								<p style="Margin:0;padding: 5px 0;"><img src="https://www.esan.edu.pe/mails/maestrias/2018/supply-chain/conferencia-online/img/logos.png" alt="Logo" width="360" height="auto" style="border:0;display: block;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 1px;outline: none;text-decoration: none; display: inline-block;" border="0"></p>
+								<p style="color: #ffffff; font-size: 14px; padding: 20px 0; text-decoration: none;"><strong>CONTÁCTATE CON NOSOTROS:</strong><br><br>
+								  <span style="color: #CBCBCB">Asesora comercial:</span> Adela Cáceres<br>
+								  <span style="color: #cbcbcb">Teléfono: </span>317 7226 | <span style="color: #cbcbcb">Anexo: </span>4124<br>
+					<a style="color: #ffffff; text-decoration: underline;" href="mailto:acaceres@esan.edu.pe" target="_blank">acaceres@esan.edu.pe</a></p>
+							</td>
+						</tr>
+					</tbody></table>
+
+
+
+
+
+<!-- FIN COPY -->
+
+				 </td>
+			   </tr>
+			 </table>
+		   </td>
+		 </tr>
+	   </table>
+	   <!--[if (gte mso 9)|(IE)]>
+			</td>
+			</tr>
+			</table>
+			<![endif]-->
+
+  </td>
+	</tr>
+
+
+    </table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center">
+<tr bgcolor="#242424">
+	<td style="padding: 10px 0;">
+<table class="outer" align="center">
+
+<tr>
+<td class="left-sidebar">
+		<!--[if (gte mso 9)|(IE)]>
+		<table width="100%">
+		<tr>
+		<td width="100">
+		<![endif]-->
+		<div class="column left">
+			<table width="100%">
+				<tr id="desktop">
+					<td>
+						<img src="https://www.esan.edu.pe/mails/maestrias/2018/maestria-en-administracion-de-negocios/img/flecha_03.gif" width="360" alt="" />
+					</td>
+				</tr>
+				<tr id="responsive">
+					<td class="inner">
+						<img src="https://www.esan.edu.pe/mails/maestrias/2018/maestria-en-administracion-de-negocios/img/flecha-movil_03.gif" width="360" alt="" />
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="column right">
+			<table width="100%">
+				<tr>
+					<td><table class="cta-button" align="center" border="0" cellpadding="0" cellspacing="0" width="200px" style="max-width: 200px;padding-left: 20px;">
+		   <tr>
+			 <td><a style="text-decoration: none; color: #ffffff;font-size: 16px; font-family: Helvetica, Arial, sans-serif; color: #FFF;background-color:#657198;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none; " href="https://www.esan.edu.pe/maestrias/supply-chain-management/solicitud-de-informacion/landing-page/?utm_source=basefuerzasarm&utm_medium=interno&utm_content=html_inicio&utm_campaign=MSCM&src=basededatos_interno_html_inicio_MSCM" target="_blank"><strong>Más información</strong></a></td>
+		   </tr>
+		 </table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--[if (gte mso 9)|(IE)]>
+		</td>
+		</tr>
+		</table>
+		<![endif]-->
+	</td>
+</tr>
+
+</table>
+
+	</td>
+</tr>
+</table>
+
+</div>
+<div class="webkit" style="max-width:600px;margin:0 auto;">
+<!--[if (gte mso 9)|(IE)]>
+<table width="600" align="center">
+<tr>
+<td>
+<![endif]-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;">
+		<tbody>
+		  <tr>
+			<td style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><!-- COPY -->
+
+			  <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width:600px;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0; ">
+				<tbody>
+				  <tr>
+					<td align="center" style="padding: 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #333333; text-align: justify; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" class="padding-copy">
+						<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;max-width:500px;border-style:none;border-width:0px;border-radius:0;border-top-width:0px;padding-bottom:0px;margin-bottom:0px;">
+						<tbody>
+							</tbody></table></td></tr>
+					  <br>
+						<tr><td>
+					  <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #060;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;border-spacing: 0;max-width:500px;border-style:none;border-width:0px;border-radius:0;border-top-width:0px;padding-bottom:0px;margin-bottom:0px;">
+						<tbody><tr bgcolor="#2160AB">
+						  <td align="center" bgcolor="#FFFFFF" style="font-size:16px;font-family:Helvetica,Arial,sans-serif;color:#3076a9;line-height:24px;padding:10px;margin-bottom:0px"><p style="font-size:21px;color:#333333;margin-top:0px;padding-bottom: 10px;"><strong>Los participantes que cumplan satisfactoriamente con los requisitos y normas del programa obtendrán:</strong></p></td>
+						</tr>
+					  </tbody></table></td></tr>
+                        <div class="column" style="max-width: 600px;padding: 0px 0;">
+                          <table width="100%">
+                                                                          <tbody><tr>
+                                                                              <td>
+                                                                                  <table>
+                                                                                      <tbody><tr>
+                                                                                          <td style="padding: 0px">
+                                                                                              <img src="https://www.esan.edu.pe/maestrias/supply-chain-management/solicitud-de-informacion/landing-page/img/opcion2-esan-lasalle.png" alt="" style="width:100%;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;" border="0">
+                                                                                          </td>
+                          															</tr>
+
+                          															<tr>
+
+                          																<td>
+
+                          																	<table class="table" width="100%" border="0">
+                          																		<tbody>
+                          																		<tr>
+
+
+
+                          																		</tr>
+                          																		<tr>
+                          																		<td width="150">
+                          																		<div><img class="img-responsive" style="margin: 0 auto;
+                          																			display: block;width: 30%; margin-bottom: 0px; alignment-adjust: central; padding-left: 5px; padding-right: 5px;" src="http://www.esan.edu.pe/maestrias/project-management/peru.png" alt="" align="middle"></div>
+                          																		</td>
+                          																		<td width="450">
+                          																		<div><p style="font-family: arial, helvetica, sans-serif;    margin: 10px 0;padding: 0 15px 0 0;" align="left">Maestro en Supply Chain Management,<br>grado académico oficial otorgado por la Universidad ESAN</p></div>
+                          																		</td>
+                          																		<td>
+                          																		</td>
+                          																		<td>
+                          																		</td>
+                          																		</tr>
+                          																		<tr>
+                          																		<td>
+                          																		<div><img class="img-responsive" style="margin: 0 auto;
+                          																			display: block;width: 30%; margin-bottom: 0px; alignment-adjust: central; padding-left: 5px; padding-right: 5px;" src="http://www.esan.edu.pe/maestrias/project-management/espa%C3%B1aa.png" alt=""></div>
+                          																		</td>
+                          																		<td>
+                          																		<div><p style="font-family: arial, helvetica, sans-serif;    margin: 10px 0;padding: 0 15px 0 0;" align="left">Master en Supply Chain Management and Technology, <br>titulación de carácter privada otorgada por LA SALLE <br> Universitat Ramon Llull (España - Barcelona)</p></div>
+                          																		</td>
+                          																		<td>
+                          																		</td>
+                          																		<td>
+                          																		</td>
+                          																		</tr>
+                          																		<tr>
+                          																		<td>
+                          																		<div><img class="img-responsive" style="margin: 0 auto;
+                          																			display: block;width: 30%; margin-bottom: 0px; alignment-adjust: central; padding-left: 5px; padding-right: 5px;" src="http://www.esan.edu.pe/maestrias/project-management/espa%C3%B1aa.png" alt=""></div>
+                          																		</td>
+                          																		<td>
+                          																		<div><p style="font-family: arial, helvetica, sans-serif;    margin: 10px 0;padding: 0 15px 0 0;" align="left">Master en Dirección Logística y Distribución Comercial, <br>titulación de carácter privada otorgada por ESIC <br> Business &amp; Marketing School (España)</p></div>
+                          																		</td>
+                          																		<td>
+                          																		</td>
+                          																		<td>
+                          																		</td>
+                          																		</tr>
+                          																		</tbody>
+                          																		</table>
+                          																</td>
+                          															</tr>
+
+                                                                                  </tbody></table>
+                                                                              </td>
+                                                                          </tr>
+                                                                      </tbody></table>
+                        </div>
+
+			  </table></td>
+		  </tr>
+		</tbody>
+	  </table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+</div><br>
+
+<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;">
+<tr bgcolor="#e7e7e7">
+	<td style="padding:0;">
+		<table class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+			<tr>
+				<td class="one-column" style="padding:0;">
+					<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;padding: 0 20px;">
+						<tr>
+							<td class="inner contents" style="padding:0;padding:10px 30px;width:100%;text-align:center;text-align: center; color: #4d4d4d; padding-top: 30px;">
+								<p class="h1" style="Margin:0;font-weight:bold;Margin-bottom:18px;font-size:18px;Margin-bottom:10px;">VENTAJAS DE NUESTRO PROGRAMA</p>
+							</td>
+						</tr>
+						<tr>
+							<td style="padding:0;border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #657198;">
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+							<tr>
+					<td class="two-column" style="padding-top: 20px;">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td style="text-align: center;">
+													<img src="https://www.esan.edu.pe/mails/maestrias/2018/supply-chain/fap/img/ico-1.png" alt="" width="100%" style="max-width: 140px;" class="icon-400"/>
+												</td>
+											</tr>
+											<tr>
+											<td class="text" style="text-align: center">
+												<p class="titulo-opciones" style="Margin:0;font-size:16px;padding-bottom:10px;color:#4d4d4d;"><strong>Simulador The Fresh Connection</strong></p>
+												<p style="Margin:0;font-size: 12px; color: #737373;">Única Maestría con 2 tipos de juegos de negocio, uno especializado para SCM y el otro simulador donde se evalúa la empresa en forma integral.</p>
+											</td>
+										</tr>
+										</table>
+								  </td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td style="text-align: center;">
+													<img src="https://www.esan.edu.pe/mails/maestrias/2018/supply-chain/conferencia2/img/ico-4.png" alt="" width="100%" class="icon-400" style="max-width: 140px;" />
+												</td>
+											</tr>
+											<tr>
+											<td class="text" style="text-align: center">
+												<p class="titulo-opciones" style="Margin:0;font-size:16px;padding-bottom:10px;color:#4d4d4d;"><strong>Project Management Profesional</strong></p>
+
+												<p style="Margin:0;font-size: 12px; color: #737373;">Preparación para la certificación del PMP del PMI</p>
+											</td>
+										</tr>
+										</table>
+								  </td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+							<tr>
+					<td class="two-column" style="padding-top: 0px;">
+						<!--[if (gte mso 9)|(IE)]>
+						<table width="100%">
+						<tr>
+						<td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td style="text-align: center;">
+													<img src="https://www.esan.edu.pe/mails/maestrias/2018/supply-chain/fap/img/ico-3.png" alt="" width="100%" class="icon-400" style="max-width: 140px;"/>
+												</td>
+											</tr>
+											<tr>
+											<td class="text" style="text-align: center">
+												<p class="titulo-opciones" style="Margin:0;font-size:16px;padding-bottom:10px;color:#4d4d4d;"><strong>Red en SCM más grande del Perú</strong></p>
+												<p style="Margin:0;font-size: 12px; color: #737373;">Participación en la reunión anual de la red de SCM más grande del Perú, con + de 600 profesionales; entre participantes, graduados y profesores.</p>
+											</td>
+										</tr>
+										</table>
+								  </td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td><td width="50%" valign="top">
+						<![endif]-->
+						<div class="column">
+							<table width="100%">
+								<tr>
+									<td class="inner">
+										<table class="contents">
+											<tr>
+												<td style="text-align: center;">
+													<img src="https://www.esan.edu.pe/mails/maestrias/2018/supply-chain/fap/img/ico-2.png" alt="" width="100%" class="icon-400" style="max-width: 140px;" />
+												</td>
+											</tr>
+											<tr>
+											<td class="text" style="text-align: center">
+												<p class="titulo-opciones" style="Margin:0;font-size:16px;padding-bottom:10px;color:#4d4d4d;"><strong>Malla curricular con enfoque 360°</strong></p>
+
+												<p style="Margin:0;font-size: 12px; color: #737373;">Incluye: Track de Competencias gerenciales, Track de Gestión Financiera, Track de TI, Track en SCM, Track de Gerencia de Proyectos (PMI) y Track de Marketing.</p>
+											</td>
+										</tr>
+										</table>
+								  </td>
+								</tr>
+							</table>
+						</div>
+						<!--[if (gte mso 9)|(IE)]>
+						</td>
+						</tr>
+						</table>
+						<![endif]-->
+					</td>
+				</tr>
+
+			<tr>
+				<td style="padding:0;padding: 0 16px;">
+					<table border="0" align="center" cellpadding="0" cellspacing="0" max-width="458px" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+						<tbody>
+<!--							<tr>
+								<td style="padding:0;padding: 20px 0;">
+									<img src="https://www.esan.edu.pe/mails/maestrias/2018/tecnologia-de-informacion/conferencia/img/1.png" align="center" height="auto" width="100%" style="border:0;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block;">
+								</td>
+							</tr>-->
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td style="padding: 0 16px;">
+					<table border="0" align="center" cellpadding="0" cellspacing="0" max-width="458px" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+						<tbody>
+							<tr>
+								<td style="padding-top:20;padding-bottom: 20px;">
+									<img src="https://www.esan.edu.pe/mails/maestrias/2018/supply-chain/conferencia2/img/1.png" align="center" width="457" height="auto" style="width: 100%;border:0;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block; max-width: 457px;">
+								</td>
+							</tr>
+							<tr>
+								<td style="padding-top:20;padding-bottom: 30px;">
+									<img src="https://www.esan.edu.pe/mails/maestrias/2018/supply-chain/fap/img/2.png" align="center" width="457" height="auto" style="width: 100%;border:0;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;display:block; max-width: 457px;">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+<table class="outer" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;" cellspacing="0" cellpadding="0" border="0" align="center">
+<tbody><tr>
+<td class="one-column" style="padding:0;">
+  <table style="border-spacing:0;font-family:sans-serif;color:#333333;padding: 0 20px;" width="100%" cellspacing="0" cellpadding="0" border="0">
+      <tbody>
+          <tr>
+              <td class="inner contents" style="padding:0;padding:10px 30px;width:100%;text-align:center;text-align: center; color: #4d4d4d; padding-top: 30px;">
+                  <p class="h1" style="Margin:0;font-weight:bold;Margin-bottom:18px;font-size:18px;Margin-bottom:10px;">OPCIONES DE FINANCIAMIENTO</p>
+              </td>
+          </tr>
+          <tr>
+              <td style="padding:0;border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #4C6D8E;"></td>
+          </tr>
+      </tbody>
+  </table>
+</td>
+</tr>
+<tr>
+<td class="three-column" style="text-align:center;font-size:0;padding-top:10px;padding-bottom:20px;">
+  <!--[if (gte mso 9)|(IE)]> <table width="100%"> <tr> <td width="200"
+  valign="top"> <![endif]-->
+  <div class="column" style="width:100%;max-width:200px;display:inline-block;vertical-align:top;">
+      <table style="border-spacing:0;font-family:sans-serif;color:#333333;" width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+              <tr>
+                  <td class="inner" style="padding:10px 16px;">
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                              <tr>
+                                  <td style="padding:0;text-align: center;">
+                                      <img src="https://www.esan.edu.pe/mails/maestrias/2018/finanzas-y-derecho-corporativo/financiamiento/img/banco.png" alt="" style="border:0;width:100%;max-width:140px;height:auto;margin: 0; padding: 0;" width="140" height="78">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="text" style="padding:0;padding-top:10px;">
+                                      <p class="titulo-opciones" style="Margin:0;font-size:15px;padding-bottom:10px;color:#4d4d4d;">
+                                          <strong>Bancos</strong>
+                                      </p>
+                                      <p style="Margin:0;font-size: 12px; color: #737373;">Los pagos se pueden realizar en los siguientes bancos: BBVA, BCP, Scotiabank.</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  <!--[if (gte mso 9)|(IE)]> </td> <td width="200" valign="top"> <![endif]-->
+  <div class="column" style="width:100%;max-width:200px;display:inline-block;vertical-align:top;">
+      <table style="border-spacing:0;font-family:sans-serif;color:#333333;" width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+              <tr>
+                  <td class="inner" style="padding:10px 16px;">
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                              <tr>
+                                  <td style="padding:0;">
+                                      <img src="https://www.esan.edu.pe/mails/maestrias/2018/finanzas-y-derecho-corporativo/financiamiento/img/inversion.png" alt="" style="border:0;width:100%;max-width:140px;height:auto;margin: 0; padding: 0;" width="140" height="78">
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="text" style="padding:0;padding-top:10px;">
+                                      <p class="titulo-opciones" style="Margin:0;font-size:15px;padding-bottom:10px;color:#4d4d4d;">
+                                          <strong>Inversión</strong>
+                                      </p>
+
+                                      <p style="Margin:0;font-size: 12px; color: #737373;">Se puede fraccionar en 4 cuotas o en 24 cuotas de financiamiento.</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  <!--[if (gte mso 9)|(IE)]> </td> <td width="200" valign="top"> <![endif]-->
+  <div class="column" style="width:100%;max-width:200px;display:inline-block;vertical-align:top;">
+      <table style="border-spacing:0;font-family:sans-serif;color:#333333;" width="100%" cellspacing="0" cellpadding="0" border="0">
+          <tbody>
+              <tr>
+                  <td class="inner" style="padding:10px 16px;">
+                      <table class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:center;" cellspacing="0" cellpadding="0" border="0">
+                          <tbody>
+                              <tr>
+                                  <td style="padding:0;">
+                                      <img src="https://www.esan.edu.pe/mails/maestrias/2018/finanzas-y-derecho-corporativo/financiamiento/img/financiamiento.png" alt="" style="border:0;width:100%;max-width:140px;height:auto;margin: 0; padding: 0;" width="140" height="78"></td>
+                              </tr>
+                              <tr>
+                                  <td class="text" style="padding:0;padding-top:10px;">
+                                      <p class="titulo-opciones" style="Margin:0;font-size:15px;padding-bottom:10px;color:#4d4d4d;">
+                                          <strong>Financiamiento</strong>
+                                      </p>
+
+                                      <p style="Margin:0;font-size: 12px; color: #737373;">Consulte por nuestras
+                                          opciones de descuentos especiales y corporativos con nuestra asesora comercial.</p>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  <!--[if (gte mso 9)|(IE)]> </td> </tr> </table> <![endif]-->
+</td>
+</tr>
+</tbody></table>
+<table width="100%"><tr>
+	<td height="1px" style="background-color: #666666; line-height: 1px; font-size: 1px;">&nbsp;</td>
+	</tr></table>
+
+<table border="0" cellspacing="0" cellpadding="0" class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+<tr>
+	<td class="two-column" style="padding:0;text-align:center;font-size:0;padding: 20px 0;">
+		<!--[if (gte mso 9)|(IE)]>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+<![endif]-->
+		<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+			<table cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+				<tr>
+					<td class="videos" style="padding:0;padding:30px 18px;text-align:center;">
+						<table cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+							<tr>
+								<td valign="middle" style="padding:0;">
+									<img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/logo-maestria1.png" width="236" alt="" style="border:0;width:100%;max-width:280px;height:auto;margin: 0; padding:0; outline:none; text-decoration:none;-ms-interpolation-mode: bicubic;"/>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--[if (gte mso 9)|(IE)]>
+</td>
+<td width="50%" valign="top">
+<![endif]-->
+		<div class="column" style="width:100%;max-width:300px;display:inline-block;vertical-align:top;">
+			<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+				<tr>
+					<td class="inner" style="padding:0;padding:10px 30px;">
+						<table border="0" cellspacing="0" cellpadding="0" class="contents" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;font-size:14px;text-align:left;">
+							<tr>
+								<td class="text" style="padding:0;padding-top:10px;">
+									<p style="Margin:0;color: #4d4d4d; font-size: 14px; padding-bottom: 10px;"><strong>INFORMES E INSCRIPCIONES</strong></p>
+
+									<p style="Margin:0;color: #737373; font-size: 14px; text-decoration: none;">Asesora comercial: <span style="color: #3B3B3B">Adela Cáceres</span><br>
+										Teléfono: <span style="color: #3B3B3B">317 7226</span> | Anexo: <span style="color: #3B3B3B">44127</span><br>
+								  E-mail: <a style="color: #3b3b3b; text-decoration: underline;" href="mailto:acaceres@esan.edu.pe" target="_blank">acaceres@esan.edu.pe</a></p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+	</td>
+</tr>
+</table>
+<table width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;">
+<tr>
+	<td bgcolor="#be1735" height="4px" style="padding:0;font-size: 1px; line-height: 1px;"></td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" class="outer-full" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;width:100%;">
+<tr bgcolor="#666666">
+	<td style="padding:0;">
+		<table border="0" cellspacing="0" cellpadding="0" class="outer" align="center" style="border-spacing:0;font-family:sans-serif;color:#333333;Margin:0 auto;width:100%;max-width:600px;">
+			<tr>
+				<td class="one-column" style="padding:0;">
+					<table border="0" cellspacing="0" cellpadding="0" width="100%" style="border-spacing:0;font-family:sans-serif;color:#333333;padding: 0 20px;">
+						<tr>
+							<td class="inner contents" style="padding:0;padding:10px 30px;width:100%;text-align:center;text-align: center;">
+								<p style="Margin:0;font-size:18px;Margin-bottom:10px;color: #ffffff; font-size: 11px; padding-top: 10px;">Síguenos</p>
+								<table border="0" cellspacing="0" cellpadding="0" align="center" class="socialicons" style="border-spacing:0;font-family:sans-serif;color:#333333;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt;border-collapse: collapse !important;">
+									<tbody>
+										<tr>
+											<td style="padding:0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt; text-align: center; padding: 10px;"><a href="https://twitter.com/esanperu/" target="_new" style="text-decoration:underline;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/tt.png" alt="Facebook" width="25" height="auto" style="border:0;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+											<td style="padding:0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt; text-align: center; padding: 10px;"><a href="https://www.instagram.com/conexion_esan/" target="_new" style="text-decoration:underline;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/instag.png" alt="Twitter" width="25" height="auto" style="border:0;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+											<td style="padding:0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt; text-align: center; padding: 10px;"><a href="https://www.facebook.com/esanmaestrias/" target="_blank" style="text-decoration:underline;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/fb.png" alt="Conexionesan" width="12" height="23" style="border:0;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+											<td style="padding:0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt; text-align: center; padding: 10px;"><a href="https://www.youtube.com/channel/UCm9vhvA4Ka7iRXbuJVWGTYQ" target="_blank" style="text-decoration:underline;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/yt.png" alt="Pinterest" width="25" height="auto" style="border:0;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+											<td style="padding:0;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;mso-table-lspace: 0pt;mso-table-rspace: 0pt; text-align: center; padding: 10px;"><a href="https://www.esan.edu.pe/conexion/" target="_blank" style="text-decoration:underline;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;color: #FFF;"><img src="https://www.esan.edu.pe/mails/maestrias/marketing/2018/nueva/img/conex.png" alt="Youtube" width="25" height="auto" style="border:0;-ms-interpolation-mode: bicubic;border: 0;height: auto;line-height: 100%;outline: none;text-decoration: none;"></a></td>
+										</tr>
+									</tbody>
+								</table>
+								<p style="Margin:0;font-size:18px;Margin-bottom:10px;margin: 20px 0px; color: #ffffff; font-size: 11px; line-height: 13px;">© Universidad ESAN 2018<br>
+									¿No puedes ver bien este mensaje? <span style="text-decoration: none;"><a target="_blank" href="https://www.esan.edu.pe/mails/maestrias/2018/supply-chain/ejercito-del-peru/" style="text-decoration:underline;color: #ffffff;">Visita la versión web</a></span><br>
+									<span style="text-decoration: none;">Si no deseas recibir nuestros correos <a href="https://www.esan.edu.pe/mails/maestrias/2018/maodp/[UNSUBSCRIBE]" style="text-decoration:underline;color: #ffffff;">Date de baja</a></span></p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
