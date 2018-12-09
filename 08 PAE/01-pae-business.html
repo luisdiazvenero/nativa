@@ -1,0 +1,627 @@
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Clase Modelo - Toma de Decisiones con Inteligencia de Negocios</title>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+<style media="all" type="text/css">
+*
+    {
+        -webkit-text-size-adjust:none;
+        -ms-text-size-adjust:none
+    }
+    html
+    {
+        width:100%
+    }
+    body
+    {
+        width:100%;
+        height:100%;
+        margin:0;
+        padding:0;
+        background-color:#e9e9e9;
+        -webkit-font-smoothing:antialiased
+    }
+    p
+    {
+        margin:0
+    }
+    a[x-apple-data-detectors]
+    {
+        color:inherit!important;
+        text-decoration:inherit!important
+    }
+    .full-image img
+    {
+        width:100%!important
+    }
+    .sp-tablet
+    {
+        height:78px!important;
+        line-height:78px!important
+    }
+    .col-50 img
+    {
+        width:100%!important
+    }
+    </style>
+<style type="text/css">
+@media (min-width: 641px) and (max-width: 768px) {
+        .main-table
+        {
+            width:100%!important;
+            min-width:0!important;
+            clear:both
+        }
+        .image img
+        {
+            width:100%!important;
+            height:auto!important
+        }
+        .sp-tablet
+        {
+            height:45px!important;
+            line-height:45px!important
+        }
+    }
+    @media only screen and (max-width: 640px) {
+        .main-table
+        {
+            width:100%!important;
+            min-width:0!important;
+            clear:both
+        }
+        .container
+        {
+            width:320px!important;
+            min-width:0!important
+        }
+        .inner,.table-sm
+        {
+            width:260px!important
+        }
+        .m-cell
+        {
+            display:block!important;
+            float:left!important;
+            width:100%!important;
+            max-width:none!important;
+            min-width:0!important
+        }
+        .m-w100
+        {
+            width:100%!important;
+            max-width:none!important;
+            min-width:0!important
+        }
+        .img-bg,.header
+        {
+            background-size:cover
+        }
+        .nav
+        {
+            width:100%!important;
+            clear:both;
+            text-align:center
+        }
+        .nav .text
+        {
+            width:31%
+        }
+        .sp-tablet
+        {
+            height:78px!important;
+            line-height:78px!important
+        }
+        .h6
+        {
+            white-space:normal!important;
+            padding:0!important
+        }
+        .h0,.m-hide
+        {
+            display:none!important
+        }
+        .h40
+        {
+            height:40px!important;
+            line-height:40px!important
+        }
+        .h80
+        {
+            height:80px!important;
+            line-height:80px!important
+        }
+        .btn td,.btn-1 td
+        {
+            padding:0!important
+        }
+        .btn td a
+        {
+            display:block;
+            padding:14px 20px 13px
+        }
+        .btn-1 td a
+        {
+            display:block;
+            padding:13px 19px 12px
+        }
+        .image img
+        {
+            width:100%!important;
+            height:auto!important
+        }
+        .footer .text
+        {
+            text-align:center!important
+        }
+    }
+    @media only screen and (max-width: 380px) {
+        .container
+        {
+            width:280px!important
+        }
+        .inner
+        {
+            width:220px!important
+        }
+    }
+    </style>
+<!--[if gte mso 9]>   <style type="text/css">     body, table, tr, td, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dd, dt {       font-family: Helvetica, Arial, sans-serif !important;     }     .h2, .h3  { line-height: 100% !important; }     .h1, .number, .link { line-height: 80% !important; }   </style>   <![endif]-->
+<!--[if gte mso 9]><xml>   <o:OfficeDocumentSettings>     <o:AllowPNG/>     <o:PixelsPerInch>96</o:PixelsPerInch>   </o:OfficeDocumentSettings> </xml><![endif]-->
+</head>
+<body style="-webkit-text-size-adjust: none; margin: 0; padding: 0; font-family: 'Open Sans', Arial, sans-serif; background-color: #e9e9e9; color: #494949;"><style type="text/css">div#emailPreHeader{ display: none !important; }</style><div id="emailPreHeader" style="mso-hide:all; visibility:hidden; opacity:0; color:transparent; mso-line-height-rule:exactly; line-height:0; font-size:0px; overflow:hidden; border-width:0; display:none !important;">[Clase Modelo] Toma de Decisiones con Inteligencia de Negocios</div>
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color: #e9e9e9;">
+<!-- Spacer -->
+<tbody>
+<tr>
+<td class="h0" height="30" style="font-size: 1px; line-height: 30px;">&nbsp;  </td>
+</tr>
+<!-- End Spacer -->
+<tr>
+<td align="center">
+<!--[if (gte mso 9)|(IE)]>     <table width="800" align="center" cellpadding="0" cellspacing="0" border="0" style="width: 800px;">       <tr>         <td valign="top">     <![endif]-->
+<table class="main-table" width="100%" align="center" cellpadding="0" cellspacing="0" border="0" style="box-shadow: 0 1px 16px 8px rgba(144, 144, 144, 0.36); max-width: 800px; min-width: 700px;">
+<tbody>
+<tr>
+<td class="layouts-here">
+<!-- Header -->
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td style="background-color: #ffffff;">
+<table class="container" width="560" align="center" cellpadding="0" cellspacing="0" border="0" style="margin: 0 auto; width: 560px;">
+<tbody>
+<tr>
+<td class="spacer" height="25" style="font-size: 1px; line-height: 25px;">&nbsp;  </td>
+</tr>
+<tr>
+<td height="50" style="height: 50px;">
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<th width="200" class="m-cell" align="left" style="font-weight: 400; padding: 0; vertical-align: middle; width: 200px;">
+<!-- Logo -->
+<table class="m-w100" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+<tbody>
+<tr>
+<td class="logo" style="border-collapse: collapse; font-size: 0; text-align: center;"> <a href="https://www.esan.edu.pe" target="_blank"> <img src="https://www.esan.edu.pe/diplomas/2018/11/20/logo_esan_55anios_color-3.png" alt="logo" width="197" height="53" style="border: none;"> </a></td>
+</tr>
+</tbody>
+</table>
+<!-- End Logo --> </th>
+<th class="m-cell" align="left" width="20" height="20" style="font-weight: 400; padding: 0; vertical-align: top; width: 20px; line-height: 20px;">&nbsp;  </th>
+<th width="340" align="right" class="m-cell" style="font-weight: 400; padding: 0; vertical-align: middle; width: 340px;">
+<!-- Nav -->
+<table class="m-w100" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+<tbody>
+
+</tbody>
+</table>
+<!-- End Nav --> </th>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+<tr>
+<td class="spacer" height="25" style="font-size: 1px; line-height: 25px;">&nbsp;  </td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+</tbody>
+</table>
+<div class="mktEditable" id="edit-email-html">
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td align="center" class="img-bg" background="https://www.esan.edu.pe/mails/pade/2019/lima/interactive-marketing/img/fondo2.jpg" style="background-position: center top; background-repeat: no-repeat; background-color: #ececec; background-image: url('https://www.esan.edu.pe/mails/pade/2019/lima/interactive-marketing/img/fondo2.jpg');">
+<table class="container" width="560" align="center" cellpadding="0" cellspacing="0" border="0" style="width: 560px;">
+<tbody>
+<tr>
+<td class="spacer" height="78" style="font-size: 1px; line-height: 78px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<table class="container" width="320" align="left" cellpadding="0" cellspacing="0" border="0" style="width: 320px;">
+<tbody>
+<tr>
+<td>
+<table align="left" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="m-hide" width="20" style="width: 20px;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="line" height="1" style="font-size: 1px; line-height: 1px; background-color: #ababab;">&nbsp;</td>
+</tr>
+</tbody>
+</table> </td>
+<td class="h6" style="font-family: 'Montserrat', Arial, sans-serif; line-height: 1; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-align: left; white-space: nowrap; color: #ababab; padding: 0 10px; width: 1px;"><span style="color: #ffffff;">CLASE MODELO</span></td>
+<td class="m-hide">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="line" height="1" style="font-size: 1px; line-height: 1px; background-color: #ababab;">&nbsp;</td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+<tr>
+<td class="spacer" height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+</tr>
+<!-- title -->
+<tr>
+<td class="h2" style="font-family: Montserrat, Arial, sans-serif; line-height: 1.2; font-size: 32px; font-weight: bold; color: #ed1170;"><span style="color: #ffffff;">Toma de Decisiones con Inteligencia de Negocios</span></td>
+</tr>
+<!-- end title -->
+</tbody>
+</table> </td>
+</tr>
+<tr>
+<td class="spacer" height="24" style="font-size: 1px; line-height: 24px;">&nbsp;</td>
+</tr>
+<tr>
+<td class="text" style="color: #494949; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 24px;"><p style="color: #ffffff; font-size: 16px; font-family: Montserrat, Arial, sans-serif;"><strong>Día: 15 de enero</strong></p>
+  <p style="color: #ffffff; font-size: 16px; font-family: Montserrat, Arial, sans-serif;"><strong>Hora: 7:30 p. m.<br>
+    Lugar: Hotel Atton, San Isidro </strong></p></td>
+</tr>
+<tr>
+<td class="spacer" height="34" style="font-size: 1px; line-height: 34px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<!-- button -->
+<table class="btn" align="left" cellspacing="0" cellpadding="0" border="0" style="min-width: 120px;">
+<tbody>
+<tr>
+<td style="border-radius: 3px; font-family: Montserrat, Arial, sans-serif; font-size: 12px; font-weight: bold; line-height: 1; padding: 14px 20px 13px; text-align: center; background-color: #FF0000; color: #ffffff;"><a href="https://www.esan.edu.pe/eventos/2019/01/15/toma-de-decisiones-con-inteligencia-de-negocios/index.php#formulario-registro-evento?utm_source=basededatos&utm_medium=interno&utm_content=mail_clase-modelo&utm_campaign=PAEBusiInte_LIM2019&src=basededatos_interno_mail_clase-modelo_PAEBusiInte_LIM2019" style="text-decoration: none; color: #ffffff;" target="_blank">REGÍSTRATE</a></td>
+</tr>
+</tbody>
+</table>
+<!-- end button --></td>
+</tr>
+<tr>
+<td class="spacer" height="40" style="font-size: 1px; line-height: 80px;">&nbsp;</td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+</tbody>
+</table>
+<!-- End Layout 2 (Text block with button on image background) -->
+<!-- Layout 6 (Image - left, text-block with list - right) -->
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td align="center" style="background-color: #ffffff;">
+<table class="container" width="560" align="center" cellpadding="0" cellspacing="0" border="0" style="width: 560px;">
+<tbody>
+<tr>
+<td class="spacer" height="78" style="font-size: 1px; line-height: 78px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="center">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="m-hide">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="line" height="1" style="font-size: 1px; line-height: 1px; background-color: #ababab;">&nbsp;</td>
+</tr>
+</tbody>
+</table> </td>
+<td class="h6" style="font-family: 'Montserrat', Arial, sans-serif; line-height: 1; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-align: center; white-space: nowrap; color: #ababab; padding: 0 10px; width: 1px;">CLASE MODELO<br></td>
+<td class="m-hide">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="line" height="1" style="font-size: 1px; line-height: 1px; background-color: #ababab;">&nbsp;</td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+<tr>
+<td class="spacer" colspan="3" height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+<!-- title -->
+<tr>
+<td class="h2" style="font-family: Montserrat, Arial, sans-serif; line-height: 1.2; font-size: 30px; font-weight: bold; color: #ed1170; text-align: center;"><span style="color: #000000;" data-select-like-a-boss="1">Toma de Decisiones con Inteligencia de Negocios</span></td>
+</tr>
+<!-- end title -->
+</tbody>
+</table> </td>
+</tr>
+<tr>
+<td class="spacer" height="24" style="font-size: 1px; line-height: 24px;">&nbsp;</td>
+</tr>
+<tr>
+<td class="text" style="color: #494949; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 24px; text-align: center;"> <p>En la actualidad las fuentes de información son diversas y las organizaciones deben prepararse para vencer las limitaciones y poder competir utilizando técnicas y herramientas para el manejo de datos y de esta manera poder competir anaáliticamente.</p> <p>________</p>  <br> <br>
+<span style="box-sizing: border-box; font-weight: bold; color: #231f20; font-family: Montserrat, Arial, sans-serif; font-size: 22px; text-align: left;">Expositor: Richard Moarri</span><br></p> </td>
+</tr>
+<tr>
+<td class="spacer" height="34" style="font-size: 1px; line-height: 34px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<th width="200" class="m-cell" align="left" style="font-weight: 400; padding: 0; vertical-align: top; width: 200px;">
+<!-- first column -->
+<table width="100%" align="left" cellpadding="0" cellspacing="0" border="0">
+<!-- image -->
+<tbody>
+<tr>
+<td class="image" style="border-collapse: collapse; font-size: 0;"><img width="170" src="https://www.esan.edu.pe/eventos/2018/03/05/SERGIO-CUERVO-REDONDO.png" style="border: none;" height="170" constrain="true" imagepreview="false"></td>
+</tr>
+<!-- end image -->
+</tbody>
+</table>
+<!-- end first column --></th>
+<th class="m-cell" align="left" width="20" height="38" style="font-weight: 400; padding: 0; vertical-align: top; width: 40px; line-height: 38px;">&nbsp;</th>
+<th width="340" class="m-cell" align="right" style="font-weight: 400; padding: 0; vertical-align: top; width: 340px;">
+<!-- second column -->
+<table class="m-w100" width="340" align="left" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 340px;">
+<tbody>
+<tr>
+<td>
+<!-- list item -->
+<!-- end list item -->
+<!-- list item -->
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<!-- check icon -->
+<td class="icon" width="20" style="border-collapse: collapse; font-size: 0; text-align: center; width: 20px; vertical-align: top;">&nbsp;</td>
+<!-- end check icon -->
+<!-- content -->
+<td class="list" style="font-family: 'Open Sans', Arial, sans-serif; font-size: 13px; font-weight: 400; line-height: 18px; color: #333834;">MBA de ESAN. Ingeniero Industrial Titulado en la Universidad de Lima, con estudios de especialización en Chile y EE.UU. Ha participado en diversas corporaciones multinacionales como consultor y gerente de proyectos en la generación de indicadores de negocios, en la optimización de procesos de toma de decisión empresarial y en la automatización de la eficiencia operacional con la aplicación de metodologías probadas y el uso de avanzados componentes analíticos. Gerente general de Moarri Enterprises. Representante en Perú de Penta Analytics. Profesor del Programa de Alta Especialización en Business Intelligence ESAN. </td>
+<!-- end content -->
+</tr>
+<tr>
+<td class="spacer" height="10" colspan="3" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- end list item -->
+<!-- list item -->
+<!-- end list item -->
+<!-- list item -->
+
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+<tr>
+<td class="spacer" height="10" colspan="3" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- end list item --></td>
+</tr>
+<tr>
+<td class="spacer" height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+</tr>
+<tr>
+<td class="spacer" height="34" style="font-size: 1px; line-height: 34px;">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<!-- button -->
+<table class="btn" align="center" cellspacing="0" cellpadding="0" border="0" style="min-width: 120px;">
+<tbody>
+<tr>
+<td style="border-radius: 3px; font-family: Poppins, Arial, sans-serif; font-size: 12px; font-weight: bold; line-height: 1; padding: 14px 20px 13px; text-align: center; background-color: #FF0000; color: #ffffff;"><a href="https://www.esan.edu.pe/eventos/2019/01/15/toma-de-decisiones-con-inteligencia-de-negocios/index.php#formulario-registro-evento?utm_source=basededatos&utm_medium=interno&utm_content=mail_clase-modelo&utm_campaign=PAEBusiInte_LIM2019&src=basededatos_interno_mail_clase-modelo_PAEBusiInte_LIM2019" style="text-decoration: none; color: #ffffff;" target="_blank">REGÍSTRATE A LA CLASE MODELO</a></td>
+</tr>
+</tbody>
+</table>
+<!-- end button --></td>
+</tr>
+<tr>
+<td class="spacer" height="80" style="font-size: 1px; line-height: 80px;">&nbsp;</td>
+</tr>
+</tbody>
+</table> </th>
+</tr>
+</tbody>
+</table>
+<!-- End Layout 6 (Image - left, text-block with list - right) --></td>
+<!-- Layout 7 (Image and text block with 2 buttons) -->
+</tr>
+</tbody>
+</table>
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td align="center" style="background-color: #fffff;">
+<table class="container" width="560" align="center" cellpadding="0" cellspacing="0" border="0" style="width: 560px;">
+<tbody>
+<tr>
+<td align="center">
+<table cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="m-hide">
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="line" height="1" style="font-size: 1px; line-height: 1px; background-color: #ababab;">&nbsp;</td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+<tr>
+<td class="spacer" colspan="3" height="10" style="font-size: 1px; line-height: 10px;">&nbsp;</td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+<!-- title -->
+<tr>
+<td class="h2" style="font-family: 'Montserrat', Arial, sans-serif; line-height: 1.2; font-size: 22px; font-weight: bold; color: #333834; text-align: center;">Este evento es realizado por<span style="color: #ed1170; font-family: Montserrat, Arial, sans-serif; font-size: 22px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: bold; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">:</span></td>
+</tr>
+<!-- end title -->
+</tbody>
+</table> </td>
+</tr>
+
+
+<!-- end image -->
+<tr>
+<td class="text" style="color: #494949; font-family: 'Open Sans', Arial, sans-serif; font-size: 24px; line-height: 30px; text-align: center;"><p>&nbsp; </p>
+  <p><strong>Programa de Alta Especialización en Business Intelligence</strong><br>
+  </p></td>
+</tr>
+<tr>
+<td class="spacer" height="34" style="font-size: 1px; line-height: 34px;">&nbsp;</td>
+</tr>
+<tr>
+<td align="center">
+<table align="center" cellspacing="0" cellpadding="0" border="0">
+<tbody>
+<tr>
+<th class="m-cell" align="left" style="font-weight: 400; padding: 0; vertical-align: top;">
+<!-- button -->
+<table class="btn" align="center" cellspacing="0" cellpadding="0" border="0" style="min-width: 120px;">
+<tbody>
+<tr>
+<td style="border-radius: 3px; font-family: Montserrat, Arial, sans-serif; font-size: 12px; font-weight: bold; line-height: 1; padding: 14px 20px 13px; text-align: center; background-color: #FF0000; color: #ffffff;"><a href="https://www.esan.edu.pe/pae/business-intelligence/?utm_source=basededatos&utm_medium=interno&utm_content=mail_clase-modelo&utm_campaign=PAEBusiInte_LIM2019&src=basededatos_interno_mail_clase-modelo_PAEBusiInte_LIM2019" style="text-decoration: none; color: #ffffff;" target="_blank">Conoce más</a></td>
+</tr>
+</tbody>
+</table>
+<!-- end button --></th>
+<th class="m-cell" align="left" style="font-weight: 400; padding: 0; vertical-align: top;"></th>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+<tr>
+<td class="spacer" height="80" style="font-size: 1px; line-height: 80px;">&nbsp;</td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+</tbody>
+</table>
+<!-- End Layout 7 (Image and text block with 2 buttons) --></td>
+</tr>
+<tr>
+<td>
+<!-- Footer --></td>
+</tr>
+</tbody>
+</table>
+<table class="footer" width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td class="color-bg" align="center" style="background-color: #1b1f18;">
+<table class="container" align="center" width="560" cellpadding="0" cellspacing="0" border="0" style="width: 560px;">
+<!-- Spacer -->
+<tbody>
+<tr>
+<td class="spacer" height="25" style="font-size: 1px; line-height: 25px;">&nbsp;</td>
+</tr>
+<!-- End Spacer -->
+<tr>
+<td height="40" style="height: 40px;">
+<table width="100%" align="center" cellpadding="0" cellspacing="0" border="0">
+<tbody>
+<tr>
+<td>
+<!-- Copyright -->
+<table class="m-w100" align="left" width="250" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+<tbody>
+<tr>
+<td class="text" style="color: #ffffff; font-family: 'Open Sans', Arial, sans-serif; font-size: 14px; line-height: 22px;">ESAN Graduate School of Business.<br>¿No puedes ver bien este mensaje? <a class="link-footer-dos" href="https://www.esan.edu.pe/mails/programas/2019/lima/business-intelligence/1/clase-modelo/basededatos" target="_blank" style="Margin:0;color:#fff;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:underline">Visita la versión web</a><br>Si no deseas recibir nuestros correos <a href="[UNSUBSCRIBE]" class="link-footer-dos" target="_blank" style="Margin:0;color:#fff;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:underline">Date de baja</a></td>
+</tr>
+</tbody>
+</table>
+<!-- Unsubscribe -->
+<table class="m-w100" align="right" width="250" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+<tbody>
+<tr>
+<td class="img" style="line-height: 24px;"></td>
+<td class="spacer" width="10" style="font-size: 1px; line-height: 24px; width: 10px;">&nbsp;</td>
+<td class="img" style="line-height: 24px;"><a href="https://www.facebook.com/esaneducacionejecutiva/" style="text-decoration: none; color: #ffffff;" target="_blank"><img width="20" src="https://www.esan.edu.pe/mails/mba/img/iconos/ico-facebook.png" alt="" style="border: none;"></a></td>
+<td class="spacer" width="10" style="font-size: 1px; line-height: 24px; width: 10px;">&nbsp;</td>
+<td class="img" style="line-height: 24px;"><a href="https://twitter.com/esanperu" style="text-decoration: none; color: #ffffff;" target="_blank"><img width="20" src="https://www.esan.edu.pe/mails/mba/img/iconos/ico-twitter.png" alt="" style="border: none;"></a></td>
+<td class="spacer" width="10" style="font-size: 1px; line-height: 24px; width: 10px;">&nbsp;</td>
+<td class="img" style="line-height: 24px;"><a href="https://www.linkedin.com/company/esan/" style="text-decoration: none; color: #ffffff;" target="_blank"><img width="20" src="https://www.esan.edu.pe/mails/mba/img/iconos/ico-linkedin.png" alt="" style="border: none;"></a></td>
+<td class="spacer" width="10" style="font-size: 1px; line-height: 24px; width: 10px;">&nbsp;</td>
+<td class="img" style="line-height: 24px;"><a href="https://www.instagram.com/esanperu/" style="text-decoration: none; color: #ffffff;" target="_blank"><img width="20" src="https://www.esan.edu.pe/mails/mba/img/iconos/ico-instagram.png" alt="" style="border: none;"></a></td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+</tbody>
+</table> </td>
+</tr>
+<!-- Spacer -->
+<tr>
+<td class="spacer" height="25" style="font-size: 1px; line-height: 25px;">&nbsp;</td>
+</tr>
+<!-- End Spacer -->
+</tbody>
+</table> </td>
+</tr>
+</tbody>
+</table>
+<!-- End Footer --> <p><br></p> </td>
+</tr>
+</tbody>
+</table>
+</div></td>
+</tr>
+</tbody>
+</table>
+<!--[if (gte mso 9)|(IE)]>     </td>
+</tr>
+</table>
+<![endif]--> <p><br></p> </td>
+</tr>
+</tbody>
+</table>
+
+</body>
